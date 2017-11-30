@@ -1,0 +1,51 @@
+<nav id="nav">
+  <ul id="nav-icons">
+    <li id="search">Search</li>
+    <li id="menu-button">Menu</li>
+  </ul>
+</nav>
+
+<script type="text/javascript">
+
+  var nav = document.querySelector('nav');
+  var nav_icons = nav.querySelector('ul');
+  var search_button = nav.querySelector('#search');
+  var menu_button = nav.querySelector('#menu-button');
+  var menu = document.querySelector('#menu');
+  var search_results = document.querySelector('#search-results');
+
+  nav.addEventListener('mouseenter', function(event) {
+    nav_icons.classList.add('toggle-icons');
+  }, false);
+
+  nav.addEventListener('mouseleave', function(event) {
+    var menu = document.querySelector('#menu');
+    var nav_icons = nav.querySelector('ul');
+    if (!menu.classList.contains('show-menu')) {
+      nav_icons.classList.remove('toggle-icons');
+    }
+
+  }, false);
+
+  // nav.addEventListener('mouseleave', function() {
+  //   var search_results = document.querySelector('#search-results');
+  //   var nav_icons = nav.querySelector('ul');
+  //   if (!search_results.classList.contains('show-search-results')) {
+  //     nav_icons.classList.remove('toggle-icons');
+  //   }
+  // }, false);
+
+  menu_button.addEventListener('click', function(event) {
+    var menu = document.querySelector('#menu');
+    menu.classList.toggle('show-menu');
+  }, false);
+
+  search_button.addEventListener('click', function(event) {
+    var search_results = document.querySelector('#search-results');
+    search_results.classList.toggle('show-search-results');
+
+  }, false)
+
+
+
+</script>

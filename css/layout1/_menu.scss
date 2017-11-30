@@ -1,0 +1,30 @@
+#menu {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  background-color: blue; //$nw-blue;
+  width: 100%;
+  height: 100%;
+  top: 3rem;
+  overflow: visible;
+  overflow-y: scroll;
+  z-index: 4;
+  transition: .5s ease;
+
+
+  &.show-menu {
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+
+}
+
+
+
+#menu-columns {
+
+
+
+}

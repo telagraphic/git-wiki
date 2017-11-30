@@ -1,0 +1,17 @@
+#search-results {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 3rem;
+  overflow: scroll;
+  background-color: blue; //#ccdcf1;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s ease;
+
+  &.show-search-results {
+    visibility: visible;
+    opacity: 1;
+  }
+}
