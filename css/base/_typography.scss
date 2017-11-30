@@ -1,0 +1,81 @@
+/*
+
+Possible Fonts
+
+Roboto
+  Roboto Sans
+Scope One
+Rubik
+Nunito
+  Nunito Sans
+Open Sans
+Libre Franklin
+
+*/
+
+html, .root {
+  font-size: calc( 21px + (24 - 21) * ( (100vw - 600px) / ( 1300 - 600) ));
+  line-height: 38px;
+}
+
+body, .article {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6521739rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 1.6956522rem;
+  line-height: 3.3043478rem;
+}
+h2, .h2 {
+  font-size: 1.4347826rem;
+  line-height: 1.6521739rem;
+}
+h3, .h3 {
+  font-size: 1.173913rem;
+  line-height: 1.6521739rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+  line-height: 1.6521739rem;
+}
+h5, .h5 {
+  font-size: 1rem;
+  line-height: 1.6521739rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}

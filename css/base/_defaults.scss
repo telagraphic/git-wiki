@@ -1,0 +1,72 @@
+// browser fixes for certain elements
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  min-height: 100%;
+  position: relative;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  -moz-padding-start: 0px;
+  background: none;
+}
+
+img {
+
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto 2rem auto;
+
+}
+
+figure, figure.highlight {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -moz-margin-before: 0;
+  -moz-margin-after: 0;
+  -moz-margin-start: 0;
+  -moz-margin-start: 0;
+   margin: 0;
+  -webkit-margin: 0;
+  -moz-margin: 0;
+  padding: 0;
+}
+
+pre, code {
+    font-family: monospace;
+    white-space: pre;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}

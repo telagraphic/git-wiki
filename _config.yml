@@ -1,0 +1,15 @@
+# Config settings
+title: Jekyll Starter
+baseurl: "" # username/git-wiki
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: ./css
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
