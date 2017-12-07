@@ -1,36 +1,50 @@
 <nav id="nav">
   <ul id="nav-icons">
-    <li id="search">Search</li>
+    <li id="search-button">Search</li>
     <li id="menu-button">Menu</li>
   </ul>
+  <form id="search-form">
+    <input type="text" name="" value="">
+  </form>
 </nav>
 
 <script type="text/javascript">
 
   var nav = document.querySelector('nav');
   var nav_icons = nav.querySelector('ul');
-  var search_button = nav.querySelector('#search');
+  var search_button = nav.querySelector('#search-button');
+  var search_form = nav.querySelector('#search-form');
   var menu_button = nav.querySelector('#menu-button');
   var menu = document.querySelector('#menu');
   var search_results = document.querySelector('#search-results');
 
-  nav.addEventListener('mouseenter', function(event) {
+  nav_icons.addEventListener('mouseenter', function(event) {
     nav_icons.classList.add('toggle-icons');
   }, false);
 
-  nav.addEventListener('mouseleave', function(event) {
+  nav_icons.addEventListener('mouseleave', function(event) {
     var menu = document.querySelector('#menu');
+    var search_form = nav.querySelector('#search-form');
     var nav_icons = nav.querySelector('ul');
-    if (!menu.classList.contains('show-menu')) {
+    if (menu.classList.contains('show-menu')) {
+      nav_icons.classList.add('toggle-icons');
+    } else  {
       nav_icons.classList.remove('toggle-icons');
     }
 
+    if (search_form.classList.contains('toggle-search-form')) {
+      nav_icons.classList.add('toggle-icons');
+    } else  {
+      nav_icons.classList.remove('toggle-search-form');
+    }
+
+
   }, false);
 
-  // nav.addEventListener('mouseleave', function() {
-  //   var search_results = document.querySelector('#search-results');
+  // search_button.addEventListener('mouseleave', function() {
+  //   var search_results = document.querySelector('#search-form');
   //   var nav_icons = nav.querySelector('ul');
-  //   if (!search_results.classList.contains('show-search-results')) {
+  //   if (!search_results.classList.contains('toggle-search-form')) {
   //     nav_icons.classList.remove('toggle-icons');
   //   }
   // }, false);
@@ -41,8 +55,10 @@
   }, false);
 
   search_button.addEventListener('click', function(event) {
-    var search_results = document.querySelector('#search-results');
-    search_results.classList.toggle('show-search-results');
+    search_form.classList.toggle('toggle-search-form');
+    nav.classList.toggle('toggle-nav-background');
+    // var search_results = document.querySelector('#search-results');
+    // search_results.classList.toggle('show-search-results');
 
   }, false)
 
