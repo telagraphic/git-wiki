@@ -1,0 +1,194 @@
+// @import "../../utils/base-styles";
+
+//colors
+$color_mine_shaft_approx: #333;
+$color_mercury_approx: #e3e3e3;
+$color_cornflower_blue_approx: #5396ea;
+$color_fuscous_gray_approx: #555;
+$color_storm_dust_approx: #666;
+$white: #fff;
+$color_black_haze_approx: #f6f6f6;
+
+
+#tipue_search_input {
+	// font: 300 14px/1 Roboto, sans-serif;
+	color: white;
+	// max-width: 210px;
+	// padding: 17px;
+	// border: 1px solid $color_mercury_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	outline: 0;
+}
+#tipue_search_foot_boxes {
+	// font: 300 14px/1 Roboto, sans-serif;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: inline;
+		a {
+			padding: 10px 17px 11px;
+			background-color: $white;
+			border: 1px solid $color_mercury_approx;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 1px;
+			color: $color_mine_shaft_approx;
+			margin-right: 7px;
+			text-decoration: none;
+			text-align: center;
+			transition: .2s ease;
+			&:hover {
+				background: #d6d6d6;
+			}
+		}
+		&.current {
+			padding: 10px 17px 11px;
+    	background: #5496ea;
+			border: 1px solid $color_mercury_approx;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 1px;
+			color: $color_mine_shaft_approx;
+			margin-right: 7px;
+			text-align: center;
+		}
+	}
+}
+#tipue_search_results_count {
+	// font: 300 14px/1.7 Roboto, sans-serif;
+	color: $color_mine_shaft_approx;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.6521739rem;
+}
+#tipue_search_warning {
+	// font: 300 14px/1.7 Roboto, sans-serif;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.652173rem;
+	color: #f22;
+	margin: 7px 0;
+	a {
+		color: $color_cornflower_blue_approx;
+		text-decoration: none;
+		&:hover {
+			color: $color_fuscous_gray_approx;
+		}
+	}
+}
+.tipue_search_content_url {
+	// font: 300 14px/1.7 Roboto, sans-serif;
+	word-wrap: break-word;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.6521739rem;
+	//Instead of the line below you could use @include hyphens($value)
+	hyphens: auto;
+	a {
+		color: $color_cornflower_blue_approx;
+		text-decoration: none;
+		&:hover {
+			color: $color_fuscous_gray_approx;
+		}
+	}
+}
+.tipue_search_content_debug {
+	font: 300 14px/1.7 Roboto, sans-serif;
+	color: $color_mine_shaft_approx;
+	margin: 5px 0;
+}
+.tipue_search_related_text {
+	font: 300 14px/1.7 Roboto, sans-serif;
+	a {
+		color: $color_cornflower_blue_approx;
+		text-decoration: none;
+		&:hover {
+			color: $color_fuscous_gray_approx;
+		}
+	}
+}
+.tipue_search_content_title {
+	// font: 400 26px/1.7 Roboto, sans-serif;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.6521739rem;
+	color: $color_storm_dust_approx;
+	margin-top: 21px;
+	a {
+		color: black;
+    text-decoration: none;
+    font-weight: 700;
+		text-decoration: none;
+		&:hover {
+			color: $color_storm_dust_approx;
+		}
+	}
+}
+.tipue_search_content_text {
+	// font: 300 15px/1.7 Roboto, sans-serif;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.6521739rem;
+	color: $color_mine_shaft_approx;
+	word-wrap: break-word;
+	//Instead of the line below you could use @include hyphens($value)
+	hyphens: auto;
+	margin-top: 5px;
+	border-bottom: .1rem solid white;
+	padding: 0 0 1rem 0;
+
+	&:last-of-type {
+		border: none;
+		padding: 0;
+	}
+}
+.tipue_search_related_title {
+	font: 300 15px/1.7 Roboto, sans-serif;
+	color: $color_mine_shaft_approx;
+	margin: 26px 0 7px;
+}
+.tipue_search_content_bold {
+	font-weight: 400;
+	color: $color_mine_shaft_approx;
+}
+.tipue_search_related_bold {
+	font-weight: 400;
+}
+.tipue_search_icon {
+	width: 24px;
+	height: 24px;
+}
+.tipue_search_left {
+	float: left;
+	padding: 15px 9px 0 0;
+}
+.tipue_search_right {
+	float: left;
+}
+#tipue_search_content {
+	max-width: 67.77777%;
+	padding: 2rem;
+	margin: 0 auto;
+	position: relative;
+	top: 3rem;
+	background: white;//#ccdcf1;
+	max-width: 67.777777%;
+}
+.tipue_search_related_before {
+	color: $color_fuscous_gray_approx;
+}
+.tipue_search_related_after {
+	color: $color_fuscous_gray_approx;
+}
+.tipue_search_related_cols {
+	//Instead of the line below you could use @include columns($width-and-count)
+	columns: 230px 2;
+}
+#tipue_search_foot {
+	margin: 51px 0 21px;
+}

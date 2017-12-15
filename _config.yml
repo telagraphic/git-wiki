@@ -3,6 +3,12 @@ title: Jekyll Starter
 baseurl: "" # username/git-wiki
 permalink: pretty
 
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: []
+
 # Build settings
 markdown: kramdown
 
@@ -13,3 +19,6 @@ sass:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - /css/vendor
+  - /js/tipuesearch_content.js
+  - Rakefile

@@ -1,67 +1,20 @@
 <nav id="nav">
   <ul id="nav-icons">
-    <li id="search-button">Search</li>
-    <li id="menu-button">Menu</li>
+    <li id="search-button">
+      <a class="search-icon">
+        <span class="circle"></span>
+        <span class="handle"></span>
+      </a>
+    </li>
+    <li id="menu-button">
+      <button class="hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    </li>
   </ul>
-  <form id="search-form">
-    <input type="text" name="" value="">
+  <form id="search-form" action="" method="">
+    <input id="tipue_search_input" type="text" pattern=".{3,}" title="At least 3 characters" required placeholder="search">
   </form>
 </nav>
-
-<script type="text/javascript">
-
-  var nav = document.querySelector('nav');
-  var nav_icons = nav.querySelector('ul');
-  var search_button = nav.querySelector('#search-button');
-  var search_form = nav.querySelector('#search-form');
-  var menu_button = nav.querySelector('#menu-button');
-  var menu = document.querySelector('#menu');
-  var search_results = document.querySelector('#search-results');
-
-  nav_icons.addEventListener('mouseenter', function(event) {
-    nav_icons.classList.add('toggle-icons');
-  }, false);
-
-  nav_icons.addEventListener('mouseleave', function(event) {
-    var menu = document.querySelector('#menu');
-    var search_form = nav.querySelector('#search-form');
-    var nav_icons = nav.querySelector('ul');
-    if (menu.classList.contains('show-menu')) {
-      nav_icons.classList.add('toggle-icons');
-    } else  {
-      nav_icons.classList.remove('toggle-icons');
-    }
-
-    if (search_form.classList.contains('toggle-search-form')) {
-      nav_icons.classList.add('toggle-icons');
-    } else  {
-      nav_icons.classList.remove('toggle-search-form');
-    }
-
-
-  }, false);
-
-  // search_button.addEventListener('mouseleave', function() {
-  //   var search_results = document.querySelector('#search-form');
-  //   var nav_icons = nav.querySelector('ul');
-  //   if (!search_results.classList.contains('toggle-search-form')) {
-  //     nav_icons.classList.remove('toggle-icons');
-  //   }
-  // }, false);
-
-  menu_button.addEventListener('click', function(event) {
-    var menu = document.querySelector('#menu');
-    menu.classList.toggle('show-menu');
-  }, false);
-
-  search_button.addEventListener('click', function(event) {
-    search_form.classList.toggle('toggle-search-form');
-    nav.classList.toggle('toggle-nav-background');
-    // var search_results = document.querySelector('#search-results');
-    // search_results.classList.toggle('show-search-results');
-
-  }, false)
-
-
-
-</script>

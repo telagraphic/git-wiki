@@ -5,14 +5,18 @@
 // base - styles for project
 @import "base/normalize";
 @import "base/typography";
-@import "base/page";
+
 @import "base/defaults";
 
 
 // layout - styles for specific components
-@import "layout/grid";
-@import "layout/content";
+@import "layouts/grid";
+@import "layouts/content";
+@import "layouts/page";
+@import "layouts/nav";
+@import "layouts/menu";
+@import "layouts/search";
 
-@import "layout1/nav";
-@import "layout1/menu";
-@import "layout1/search";
+// vendor specific styles
+@import "vendor/hamburgers/hamburgers";
+@import "vendor/tipuesearch/tipuesearch";

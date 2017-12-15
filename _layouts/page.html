@@ -1,14 +1,12 @@
 <!doctype html>
 
 <html lang="en">
-
   {% include head.html %}
-
 <body>
 
   <section class="container">
 
-    <section class="grid-row">
+    <section class="grid-row" id="nav">
       {% include nav.html %}
     </section>
 
@@ -16,18 +14,17 @@
       {% include menu.html %}
     </section>
 
-    <section class="grid-row" id="search-results">
-      {% include search-results.html %}
+    <section class="grid-row" id="search-section">
+      <section id="tipue_search_content"></section>
     </section>
 
-    <section class="grid-row">
+    <section class="grid-row" id="content-section">
       {% include content.html %}
     </section>
 
   </section>
 </body>
-<script type="text/javascript">
 
+  {% include scripts.html %}
 
-</script>
 </html>
