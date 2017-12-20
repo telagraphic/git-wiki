@@ -6,20 +6,24 @@
     .hamburger-inner {
       transition-duration: 0.2s;
       transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: black;
 
       &::before,
       &::after {
         transition-duration: 0s;
         transition-delay: 0.1s;
         transition-timing-function: linear;
+        background-color: black;
       }
 
       &::before {
         transition-property: top, opacity;
+        background-color: black;
       }
 
       &::after {
         transition-property: bottom, transform;
+        background-color: black;
       }
     }
 
@@ -27,20 +31,24 @@
       .hamburger-inner {
         transform: rotate(765deg);
         transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: white;
 
         &::before,
         &::after {
           transition-delay: 0s;
+
         }
 
         &::before {
           top: 0;
           opacity: 0;
+          background-color: white;
         }
 
         &::after {
           bottom: 0;
           transform: rotate(90deg);
+          background-color: white;
         }
       }
     }

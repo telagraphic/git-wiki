@@ -9,6 +9,10 @@
 @import "base/defaults";
 
 
+// vendor specific styles
+@import "vendor/hamburgers/hamburgers";
+@import "vendor/tipuesearch/tipuesearch";
+
 // layout - styles for specific components
 @import "layouts/grid";
 @import "layouts/content";
@@ -16,7 +20,3 @@
 @import "layouts/nav";
 @import "layouts/menu";
 @import "layouts/search";
-
-// vendor specific styles
-@import "vendor/hamburgers/hamburgers";
-@import "vendor/tipuesearch/tipuesearch";

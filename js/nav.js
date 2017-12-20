@@ -6,9 +6,11 @@ var search_icon = nav.querySelector('a.search-icon');
 var search_input = document.querySelector('#tipue_search_input');
 var search_section = document.querySelector('#search-section');
 var search_content = document.querySelector('#tipue_search_content');
+var search_close_button = document.querySelector("#search-close-button");
 var menu_button = nav.querySelector('#menu-button');
 var hamburger = nav.querySelector(".hamburger");
 var menu = document.querySelector('#menu');
+var content_section = document.querySelector('#content-section');
 
 nav_icons.addEventListener('mouseenter', function(event) {
   nav_icons.classList.add('toggle-icons');
@@ -31,26 +33,3 @@ nav_icons.addEventListener('mouseleave', function(event) {
   }
 
 }, false);
-
-menu_button.addEventListener('click', function(event) {
-  var menu = document.querySelector('#menu');
-  menu.classList.toggle('show-menu');
-}, false);
-
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle("is-active");
-}, false);
-
-search_button.addEventListener('click', function(event) {
-  search_form.classList.toggle('toggle-search-form');
-  nav.classList.toggle('toggle-nav-background');
-  search_input.focus();
-});
-
-search_icon.addEventListener('click', function(event) {
-  this.classList.toggle("open");
-}, false);
-
-search_input.addEventListener('focus', function() {
-  this.setAttribute("placeholder", "");
-});

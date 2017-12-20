@@ -1,26 +1,30 @@
 #search-section {
   z-index: 3;
-  background-color: yellow;
+}
+
+.search-results {
+  background-color: none;
   position: absolute;
   opacity: 0;
   visibility: hidden;
   overflow-x: hidden;
+  transition: .2s ease;
+}
 
-  .show-results {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0rem;
-    overflow: scroll;
-    z-index: 4;
-    background-color: white; //#ccdcf1;
-    opacity: 1;
-    visibility: visible;
-    transition: .1s ease;
-  }
+.toggle-results {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0rem;
+  overflow: scroll;
+  z-index: 4;
+  background-color: none; //#ccdcf1;
+  opacity: 1;
+  visibility: visible;
+  transition: .1s ease;
+}
 
-  #tipue_search_content {
+#tipue_search_content {
 
-  }
 }
