@@ -10,6 +10,7 @@ menu_button.addEventListener('click', function(event) {
   circle.classList.toggle('white-circle');
 
   content_section.classList.toggle('toggle-content');
+
 }, false);
 
 hamburger.addEventListener('click', function() {

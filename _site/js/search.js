@@ -19,7 +19,7 @@ search_input.addEventListener('keydown', function(event) {
 
     // show search results container
     search_section.classList.add('toggle-results');
-    // close_button.classList.add('show-close-button');
+    search_close_button.classList.add('toggle-search-results');
 
     // hide menu when searching, reset hamburger to closed
     // if (navmenu.classList.contains("show-menu") === true) {
@@ -35,5 +35,7 @@ search_close_button.addEventListener('click', function(event) {
   nav.classList.remove('toggle-nav-background');
   search_icon.classList.remove('open');
   search_section.classList.remove('toggle-results');
+  nav_icons.classList.remove('toggle-icons');
+  event.preventDefault();
 
 });

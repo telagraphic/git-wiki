@@ -65,7 +65,7 @@ nav {
       color: white;
       position: relative;
       top: .4rem;
-      width: 67%;
+      width: 69%;
       display: block;
       margin: 0 auto;
       background: none;
@@ -73,14 +73,43 @@ nav {
       &:-webkit-autofill {
         background: none;
       }
+
+      &:input:-webkit-autofill {
+        background-color: none;
+      }
     }
 
     #search-close-button {
-      content: "X";
-      background: blue;
-      position: relative;
-      left: 1rem;
-      border-radius: 3rem;
+
+    }
+
+    .search-results-button {
+      padding: .5rem;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      font-size: 1rem;
+      color: black;//$nw-blue;
+      transition: color .2s ease-in;
+      transition: background-color .2s ease-in;
+      position: fixed;
+      top: .45rem;
+      right: 4rem;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: white;//#bdbdbd;//#f7f7f7;//#e4e4e4;
+      opacity: 0;
+      transition: .3s ease;
+
+      &:hover {
+        // color: gray;
+        background-color: #c1c1c1;//#c7c7c7;
+      }
+    }
+
+    .toggle-search-results {
+      opacity: 1;
     }
   }
 }
