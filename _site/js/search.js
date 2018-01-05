@@ -21,12 +21,10 @@ search_input.addEventListener('keydown', function(event) {
     search_section.classList.add('toggle-results');
     search_close_button.classList.add('toggle-search-results');
 
-    // hide menu when searching, reset hamburger to closed
-    // if (navmenu.classList.contains("show-menu") === true) {
-    //   navmenu.classList.remove("show-menu");
-    //   hamburger.classList.remove("is-active")
-    // }
-
+    if (menu.classList.contains('show-menu')) {
+      menu.classList.remove('show-menu');
+      hamburger.classList.remove("is-active");
+    }
   }
 });
 
@@ -36,6 +34,8 @@ search_close_button.addEventListener('click', function(event) {
   search_icon.classList.remove('open');
   search_section.classList.remove('toggle-results');
   nav_icons.classList.remove('toggle-icons');
+  content_section.classList.remove('toggle-content');
+  handle.classList.remove('white-handle');
+  circle.classList.remove('white-circle');
   event.preventDefault();
-
 });
