@@ -25,11 +25,32 @@
 
   ul {
     list-style: none;
+    text-align: center;
+    // padding: .75rem;
   }
 
-  a {
-    color: white;
-    text-decoration: none;
+  li {
+    background-color: blue;
+    transition: .2s ease;
+    padding: .25rem;
+    border-left: 5px solid blue;
+
+
+    &:hover {
+      background-color: lighten(blue, 10%);
+      border-left: 5px solid white;
+
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: darken(white, 10%);
+      }
+    }
   }
+
 
 }

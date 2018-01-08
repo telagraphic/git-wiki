@@ -1,0 +1,21 @@
+@import "../utils/base_colors";
+
+ul.list-links {
+
+  li {
+
+
+  }
+
+  a {
+
+    color: $nw-blue;
+    font-weight: 500;
+    transition: .4s ease;
+
+    &:hover {
+      color: lighten($nw-blue, 5%);
+      color: $primary-hover;
+    }
+  }
+}

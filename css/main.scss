@@ -13,6 +13,7 @@
 @import "vendor/hamburgers/hamburgers";
 @import "vendor/tipuesearch/tipuesearch";
 
+
 // layout - styles for specific components
 @import "layouts/grid";
 @import "layouts/content";
@@ -20,3 +21,12 @@
 @import "layouts/nav";
 @import "layouts/menu";
 @import "layouts/search";
+
+
+// components - buttons, inputs, links
+@import "components/table";
+@import "components/text";
+@import "components/lists";
+@import "components/top_links";
+@import "components/buttons";
+@import "components/definition_lists";

@@ -1,5 +1,5 @@
 search_template = "assets/tipuesearch/tipuesearch_content.js"
-tipue_content = "js/tipuesearch_content.js"
+tipue_content = "js/scripts/tipuesearch_content.js"
 
 desc "Replace search json index with liquid template"
 task :replace do

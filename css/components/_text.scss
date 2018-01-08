@@ -1,0 +1,42 @@
+@import "../utils/base_colors";
+
+a {
+  text-decoration: none;
+  color: $nw-blue;
+  transition: .4s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: $primary-hover;
+  }
+}
+
+
+article {
+
+  h1 {
+
+
+  }
+
+  h2 {
+    // border-bottom: 2px solid blue;
+    // border-left: 5px solid $nw-blue;
+
+  }
+
+  p {
+
+
+    a {
+      color: $inline-link;
+      text-decoration: underline;
+      transition: .4s ease;
+
+      &:hover {
+        color: $secondary-hover;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../utils/base_colors";
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+
+  thead {
+    background: #e6e6e6;
+    font-weight: 500;
+
+    td {
+      padding: .55rem;
+    }
+
+    tr {
+      border-bottom: .1rem solid $nw-blue;
+    }
+
+  }
+
+  tbody {
+
+    font-weight: 400;
+
+    td {
+      padding: .55rem;
+    }
+
+    tr {
+      border-bottom: .1rem solid $nw-blue;
+
+      // &:nth-child(even) {
+      //   background: #e4e4e4;
+      // }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        transition: .4s ease;
+
+        &:hover {
+          color: $nw-blue;
+        }
+      }
+
+    }
+
+
+  }
+
+
+
+}

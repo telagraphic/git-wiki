@@ -1,0 +1,36 @@
+@import "../utils/base_colors";
+
+dl.definition-list {
+
+
+  dt {
+    background-color: #c3c1c1;
+    padding: .34rem;
+    color: #1e57a6;
+    font-weight: 500;
+    position: relative;
+    transition: .4s ease;
+    border-bottom: .1rem black solid;
+
+    &:hover {
+      background-color: darken(#c3c1c1, 5%);
+      color: lighten(#1e57a6, 15%);
+    }
+
+  }
+
+  dd {
+    font-weight: 500;
+    opacity: 0;
+    height: 0;
+    transition: padding .4s ease;
+    -webkit-margin-start: .5rem;
+    position: relative;
+
+    &.show-data-definition {
+      padding: .5rem 0 1rem 0;
+      opacity: 1;
+      height: 100%;
+    }
+  }
+}

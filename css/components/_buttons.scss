@@ -1,0 +1,65 @@
+@import "../utils/base_colors";
+
+@mixin basic-button {
+  border: none;
+  outline: none;
+  color: white;
+  padding: .5rem;
+  border-radius: .55rem;
+  transition: background-color .3s ease;
+  min-width: 6rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+a.button-link {
+  text-decoration: none;
+
+  button[type='button'] {
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.blue-button {
+  @include basic-button;
+  background-color: $nw-blue;
+
+  &:hover {
+    background-color: lighten( $nw-blue, 5% );
+  }
+}
+
+.orange-button {
+  @include basic-button;
+  background-color: $orange;
+
+  &:hover {
+    background-color: darken( $orange, 5% );
+  }
+}
+
+.red-button {
+  @include basic-button;
+  background-color: $red;
+
+  &:hover {
+    background-color: darken( $red, 5% );
+  }
+}
+
+.green-button {
+  @include basic-button;
+  background-color: $green;
+
+  &:hover {
+    background-color: lighten( $green, 5% );
+  }
+}

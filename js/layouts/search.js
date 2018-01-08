@@ -14,13 +14,13 @@ search_input.addEventListener('focus', function() {
 
 search_input.addEventListener('keydown', function(event) {
   if (event.keyCode === 13) {
-    console.log("search triggered...");
     event.preventDefault();
 
     // show search results container
     search_section.classList.add('toggle-results');
     search_close_button.classList.add('toggle-search-results');
 
+    // hide menu when searching
     if (menu.classList.contains('show-menu')) {
       menu.classList.remove('show-menu');
       hamburger.classList.remove("is-active");

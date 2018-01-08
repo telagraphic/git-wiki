@@ -1,6 +1,6 @@
 # Config settings
-title: Jekyll Starter
-baseurl: "" # username/git-wiki
+title: Git Wiki
+baseurl: "/lyonsn1/git-wiki"
 permalink: pretty
 
 tipue_search:
