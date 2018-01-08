@@ -1,4 +1,4 @@
-# [Git Wiki](https://pages.github.nwie.net/lyonsn1/wiki-starter/)
+# [Git Wiki](https://pages.github.nwie.net/lyonsn1/git-wiki/)
 
 Git Wiki is for line documentation, onboarding and project knowledge sharing!
 Powered by [Jekyll](https://jekyllrb.com/docs/home/),
