@@ -72,6 +72,7 @@ https://pages.github.nwie.net/lyonsn1/wiki-starter/
 
 # Issues
 __octopress-autoprefixer__ for sass prefixing throws __ExecJS : ProgramError__
+Need to install Node.js to fix.
 
 # Build, Test and Deploy Instructions
 
