@@ -1,4 +1,4 @@
-# [Git Wiki](https://pages.github.nwie.net/lyonsn1/wiki-starter/)
+# [Git Wiki](https://pages.github.nwie.net/lyonsn1/git-wiki/)
 
 Git Wiki is for line documentation, onboarding and project knowledge sharing!
 Powered by [Jekyll](https://jekyllrb.com/docs/home/),
@@ -72,6 +72,7 @@ https://pages.github.nwie.net/lyonsn1/wiki-starter/
 
 # Issues
 __octopress-autoprefixer__ for sass prefixing throws __ExecJS : ProgramError__
+Need to install Node.js to fix.
 
 # Build, Test and Deploy Instructions
 
