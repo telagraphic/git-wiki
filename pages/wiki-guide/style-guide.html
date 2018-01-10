@@ -4,345 +4,345 @@ title: home
 permalink: /style-guide/
 ---
 
-<article class="page">
-  <section id="">
-    <h1>Style Guide</h1>
 
-    <p>
-      Overview of the UI Components.  Contact support <a href="mailto: lyonsn1@nationwide.com">@Nick Lyons</a>.
-    </p>
+<section id="">
+  <h1>Style Guide</h1>
 
-    <ul>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#text-sections" class="button">
-          Text Sections
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#tables" class="button">
-          Tables
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#lists" class="button">
-          Lists
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#links" class="button">
-          Links
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#buttons" class="button">
-          Buttons
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#definition-list" class="button">
-          Definition Lists
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#tabs" class="button">
-          Tabs
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#tabs" class="button">
-          Boxes
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/style-guide#tabs" class="button">
-          Icons
-        </a>
-      </li>
-    </ul>
+  <p>
+    Overview of the UI Components.  Contact support <a href="mailto: lyonsn1@nationwide.com">@Nick Lyons</a>.
+  </p>
 
-  </section>
-
-  <section id="text-sections">
-    <h2>Text Sections</h2>
-
-    <p>
-
-      <b>Vertical Rhythm</b>, or the spacing and proximity of headers and sub-headers in relation
-      to paragraphs and lists is useful for visually communicating what is related.
-
-    </p>
-
-    <p>
-      Notice the space above and below the headers, there is more above and less below to
-      visually convey associated content.  An equal distance above and below provides for a smooth
-      read but doesn't show header to content relationship very well.
-    </p>
-
-    <p>
-      Headers closer to their content shows a closeness, a relationship.  It's a subtle effect.
-      White space between headers shows distance or a distinct grouping of information.
-    </p>
-
-    <p>
-      Use <b>h2</b> headers for top level sections and use <b>h3</b> for sub-sections or mini-chapters
-      for a topic.  These prinicples are coded for all elements on the page to provide a smoother reading
-      experience.  Hopefully...
-    </p>
-
-    <ul>
-      <li>
-        <a href="https://zellwk.com/blog/wrong-about-vertical-rhythm/">Vertical Rhythm</a>
-      </li>
-      <li>
-        <a href="https://iamsteve.me/blog/entry/a-guide-to-vertical-rhythm">Vertical Rhythm</a>
-      </li>
-      <li>
-        <a href="https://zellwk.com/blog/wrong-about-vertical-rhythm/">Vertical Rhythm</a>
-      </li>
-    </ul>
-
-    <h3>Project Decomp</h3>
-
-    <p>
-      What UI changes are happening, <a href="#">feed changes</a>, database table validation.
-      Ask the dev what will I be validating? The UI, the database tables, or a report somewhere?
-      Testers and Dev's give a point estimate for suggested cards.
-    </p>
-
-    <p>
-      Most story cards never exceed 5 points. If they do, the card is too big.
-      You should find scenarios to move into another card. Don't estimate an 8 point card,
-      decompose it into smaller cards.
-    </p>
-
-    <h3>3 Amigos</h3>
-
-    <p>
-      RA creates story cards according to the SRD Business Rules.
-      RA get's approval from BAO for the story card. Look at the RA Board for story card status.
-
-    </p>
-
-    <p>
-      Bring laptop and ask the RA or Dev where in the UI or database tables the test can be validated.
-      Write your notes in the RTC card, these will be helpful for the tester who picks up the card later.
-    </p>
-
-  </section>
-
-  <section id="tables">
-    <h2>Tables</h2>
-
-    <p>
-      Tables come into to types: <b>Static</b> or <b>Data</b>.
-      <a href="https://jekyllrb.com/docs/datafiles/">Data tables allow you to use a YAML or CSV</a> to populate the table from a file.
-      Much easier for re-use and maintenance.
-    </p>
-
-    <table>
-      <thead>
-        <tr>
-          <td>Name</td>
-          <td>Title</td>
-        </tr>
-      </thead>
-      <tbody>
-        {% for contact in site.data.contacts.contacts %}
-        <tr>
-          <td>
-            <a href="mailto:{{contact.email}}">{{contact.name}}</a>
-          </td>
-          <td>{{contact.title}}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </section>
-
-
-  <section id="lists">
-    <h2>Lists</h2>
-
-    <h3 style="padding: 1rem 0 .34rem 0;">List of Links</h3>
-
-    <ul class="list-links">
-      <li>
-        <a href="{{site.baseurl}}/onboarding/tools">Tools</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/access-permissions">Access & Permissions</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/starter-docs">Starter Docs</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/useful-links">Useful Links/Documents</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/project-overview">Project Overview</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/testing-overview">Testing Overview</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/cardwall">Cardwall</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/onboarding/how-tos">How To's</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/contacts-teams">Contacts & Teams</a>
-      </li>
-    </ul>
-
-    <h3 style="padding: 1rem 0 .34rem 0;">Inline Link in a Paragrah</h3>
-
-    <p>
-      What UI changes are happening, <a href="#">feed changes</a>, database table validation.
-      Ask the dev what will I be validating? The UI, the <a href="#">database tables</a>, or a report somewhere?
-      Testers and Dev's give a point estimate for suggested cards.
-    </p>
-
-  </section id="links">
-    <h2>Quick Links</h2>
-    <p>
-      Quick Links list for article sections.  Put an <b>id="#bookmark"</b> on an element and reference
-      it from the quick links.  Quick links go at the beginning and basically short cuts to the article sections.
-    </p>
-    <ul class="quick-links">
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">More Info</a>
-        <ul>
-          <li>
-            <a href="#">Product Model</a>
-          </li>
-          <li>
-            <a href="#">State Variations</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Details of Product</a>
-        <ul>
-          <li>
-            <a href="#">Types</a>
-          </li>
-          <li>
-            <a href="#">Product Codes</a>
-          </li>
-          <li>
-            <a href="#">Serialization</a>
-          </li>
-        </ul>
-      </li>
-
-    </ul>
-  <section id="buttons">
-    <h2>Buttons</h2>
-
-    <p>
-      Used for navigation to other pages.  Colors are for variety!
-    </p>
-
-      <a href="{{site.baseurl}}/" class="button-link">
-        <button class="blue-button" type="button" name="button">
-          Home
-        </button>
+  <ul>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#text-sections" class="button">
+        Text Sections
       </a>
-
-      <a href="{{site.baseurl}}/onboarding" class="button-link">
-        <button class="green-button" type="button" name="button">
-          Onboarding
-        </button>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#tables" class="button">
+        Tables
       </a>
-
-      <a href="{{site.baseurl}}/projects" class="button-link">
-        <button class="orange-button" type="button" name="button">
-          Projects
-        </button>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#lists" class="button">
+        Lists
       </a>
-
-      <a href="{{site.baseurl}}/" class="button-link">
-        <button class="red-button" type="button" name="button">
-          Back to Home
-        </button>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#links" class="button">
+        Links
       </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#buttons" class="button">
+        Buttons
+      </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#definition-list" class="button">
+        Definition Lists
+      </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#tabs" class="button">
+        Tabs
+      </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#tabs" class="button">
+        Boxes
+      </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/style-guide#tabs" class="button">
+        Icons
+      </a>
+    </li>
+  </ul>
 
+</section>
 
-  </section>
+<section id="text-sections">
+  <h2>Text Sections</h2>
 
-  <section id="definition-list">
-    <h2>Data Definition Lists</h2>
+  <p>
 
-    <p>
-      Hide and Show definitions are perfect for keeping a growing list of
-      business and technical terms.
-    </p>
+    <b>Vertical Rhythm</b>, or the spacing and proximity of headers and sub-headers in relation
+    to paragraphs and lists is useful for visually communicating what is related.
 
+  </p>
 
+  <p>
+    Notice the space above and below the headers, there is more above and less below to
+    visually convey associated content.  An equal distance above and below provides for a smooth
+    read but doesn't show header to content relationship very well.
+  </p>
 
-    <h3>Basic Policy Terms</h3>
-    <dl class="definition-list">
-      <dt>Deductible</dt>
-      <dd>
-        The amount the customer must pay before insurance kicks in.
-      </dd>
+  <p>
+    Headers closer to their content shows a closeness, a relationship.  It's a subtle effect.
+    White space between headers shows distance or a distinct grouping of information.
+  </p>
 
-      <dt>Coverage</dt>
-      <dd>
-        A general term for all the types of coverages against possible risks.
-        The more coverage the higher the premium.
-        A general term for all the types of coverages against possible risks.
-        The more coverage the higher the premium.
-      </dd>
+  <p>
+    Use <b>h2</b> headers for top level sections and use <b>h3</b> for sub-sections or mini-chapters
+    for a topic.  These prinicples are coded for all elements on the page to provide a smoother reading
+    experience.  Hopefully...
+  </p>
 
-      <dt>Primary Insured</dt>
-      <dd>
-        Usually the policy holder, it refers to who the insurance will protect.
-      </dd>
+  <ul>
+    <li>
+      <a href="https://zellwk.com/blog/wrong-about-vertical-rhythm/">Vertical Rhythm</a>
+    </li>
+    <li>
+      <a href="https://iamsteve.me/blog/entry/a-guide-to-vertical-rhythm">Vertical Rhythm</a>
+    </li>
+    <li>
+      <a href="https://zellwk.com/blog/wrong-about-vertical-rhythm/">Vertical Rhythm</a>
+    </li>
+  </ul>
 
-      <dt>MVR</dt>
-      <dd>
-        Motor Vehicle Records contain traffic violations and related information
-        about the vehicle or driver.
-      </dd>
+  <h3>Project Decomp</h3>
 
-      <dt>Secondary Insured</dt>
-      <dd>
-        Additional individual to be insured under the same coverages as the Primary.
-      </dd>
-    </dl>
+  <p>
+    What UI changes are happening, <a href="#">feed changes</a>, database table validation.
+    Ask the dev what will I be validating? The UI, the database tables, or a report somewhere?
+    Testers and Dev's give a point estimate for suggested cards.
+  </p>
 
-  </section>
+  <p>
+    Most story cards never exceed 5 points. If they do, the card is too big.
+    You should find scenarios to move into another card. Don't estimate an 8 point card,
+    decompose it into smaller cards.
+  </p>
 
-  <section id="tabs">
-    <h2>Tabs</h2>
+  <h3>3 Amigos</h3>
 
-    <section class="tabs">
-      <ul class="grid-row tab-links">
-        <li>Story Card</li>
-        <li>Tech Card</li>
-        <li>Test Card</li>
+  <p>
+    RA creates story cards according to the SRD Business Rules.
+    RA get's approval from BAO for the story card. Look at the RA Board for story card status.
+
+  </p>
+
+  <p>
+    Bring laptop and ask the RA or Dev where in the UI or database tables the test can be validated.
+    Write your notes in the RTC card, these will be helpful for the tester who picks up the card later.
+  </p>
+
+</section>
+
+<section id="tables">
+  <h2>Tables</h2>
+
+  <p>
+    Tables come into to types: <b>Static</b> or <b>Data</b>.
+    <a href="https://jekyllrb.com/docs/datafiles/">Data tables allow you to use a YAML or CSV</a> to populate the table from a file.
+    Much easier for re-use and maintenance.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Title</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for contact in site.data.contacts.contacts %}
+      <tr>
+        <td>
+          <a href="mailto:{{contact.email}}">{{contact.name}}</a>
+        </td>
+        <td>{{contact.title}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section id="lists">
+  <h2>Lists</h2>
+
+  <h3 style="padding: 1rem 0 .34rem 0;">List of Links</h3>
+
+  <ul class="list-links">
+    <li>
+      <a href="{{site.baseurl}}/onboarding/tools">Tools</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/access-permissions">Access & Permissions</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/starter-docs">Starter Docs</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/useful-links">Useful Links/Documents</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/project-overview">Project Overview</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/testing-overview">Testing Overview</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/cardwall">Cardwall</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/onboarding/how-tos">How To's</a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/contacts-teams">Contacts & Teams</a>
+    </li>
+  </ul>
+
+  <h3 style="padding: 1rem 0 .34rem 0;">Inline Link in a Paragrah</h3>
+
+  <p>
+    What UI changes are happening, <a href="#">feed changes</a>, database table validation.
+    Ask the dev what will I be validating? The UI, the <a href="#">database tables</a>, or a report somewhere?
+    Testers and Dev's give a point estimate for suggested cards.
+  </p>
+
+</section>
+
+<section id="links">
+  <h2>Quick Links</h2>
+  <p>
+    Quick Links list for article sections.  Put an <b>id="#bookmark"</b> on an element and reference
+    it from the quick links.  Quick links go at the beginning and basically short cuts to the article sections.
+  </p>
+  <ul class="quick-links">
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">More Info</a>
+      <ul>
+        <li>
+          <a href="#">Product Model</a>
+        </li>
+        <li>
+          <a href="#">State Variations</a>
+        </li>
       </ul>
+    </li>
+    <li>
+      <a href="#">Details of Product</a>
+      <ul>
+        <li>
+          <a href="#">Types</a>
+        </li>
+        <li>
+          <a href="#">Product Codes</a>
+        </li>
+        <li>
+          <a href="#">Serialization</a>
+        </li>
+      </ul>
+    </li>
 
-      <section class="tab-content-container">
-        <section class="tab-content active-tab">
-          <img src="{{site.baseurl}}/assets/img/cardwall/story-green-card.jpg" alt="">
-        </section>
-        <section class="tab-content">
-          <img src="{{site.baseurl}}/assets/img/cardwall/tech-yellow-card.jpg" alt="">
-        </section>
-        <section class="tab-content">
-          <img src="{{site.baseurl}}/assets/img/cardwall/defect-pink-card.jpg" alt="">
-        </section>
+  </ul>
+
+<section id="buttons">
+  <h2>Buttons</h2>
+
+  <p>
+    Used for navigation to other pages.  Colors are for variety!
+  </p>
+
+    <a href="{{site.baseurl}}/" class="button-link">
+      <button class="blue-button" type="button" name="button">
+        Home
+      </button>
+    </a>
+
+    <a href="{{site.baseurl}}/onboarding" class="button-link">
+      <button class="green-button" type="button" name="button">
+        Onboarding
+      </button>
+    </a>
+
+    <a href="{{site.baseurl}}/projects" class="button-link">
+      <button class="orange-button" type="button" name="button">
+        Projects
+      </button>
+    </a>
+
+    <a href="{{site.baseurl}}/" class="button-link">
+      <button class="red-button" type="button" name="button">
+        Back to Home
+      </button>
+    </a>
+
+
+</section>
+
+<section id="definition-list">
+  <h2>Data Definition Lists</h2>
+
+  <p>
+    Hide and Show definitions are perfect for keeping a growing list of
+    business and technical terms.
+  </p>
+
+
+
+  <h3>Basic Policy Terms</h3>
+  <dl class="definition-list">
+    <dt>Deductible</dt>
+    <dd>
+      The amount the customer must pay before insurance kicks in.
+    </dd>
+
+    <dt>Coverage</dt>
+    <dd>
+      A general term for all the types of coverages against possible risks.
+      The more coverage the higher the premium.
+      A general term for all the types of coverages against possible risks.
+      The more coverage the higher the premium.
+    </dd>
+
+    <dt>Primary Insured</dt>
+    <dd>
+      Usually the policy holder, it refers to who the insurance will protect.
+    </dd>
+
+    <dt>MVR</dt>
+    <dd>
+      Motor Vehicle Records contain traffic violations and related information
+      about the vehicle or driver.
+    </dd>
+
+    <dt>Secondary Insured</dt>
+    <dd>
+      Additional individual to be insured under the same coverages as the Primary.
+    </dd>
+  </dl>
+
+</section>
+
+<section id="tabs">
+  <h2>Tabs</h2>
+
+  <section class="tabs">
+    <ul class="grid-row tab-links">
+      <li>Story Card</li>
+      <li>Tech Card</li>
+      <li>Test Card</li>
+    </ul>
+
+    <section class="tab-content-container">
+      <section class="tab-content active-tab">
+        <img src="{{site.baseurl}}/assets/img/cardwall/story-green-card.jpg" alt="">
       </section>
-
-
+      <section class="tab-content">
+        <img src="{{site.baseurl}}/assets/img/cardwall/tech-yellow-card.jpg" alt="">
+      </section>
+      <section class="tab-content">
+        <img src="{{site.baseurl}}/assets/img/cardwall/defect-pink-card.jpg" alt="">
+      </section>
     </section>
 
+
   </section>
 
-</article>
+</section>
