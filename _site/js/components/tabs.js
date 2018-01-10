@@ -10,11 +10,7 @@ tab_links.forEach(function(link, index) {
   });
 });
 
-function displayTab() {
-  removeActiveTab();
-  getTabIndex();
-};
-
+// remove active tab status
 function removeActiveTab() {
   tabs.forEach(function(tab) {
     tab.classList.remove("active-tab");

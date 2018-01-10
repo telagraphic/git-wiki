@@ -6,13 +6,40 @@
   ul.tab-links {
     list-style: none;
     margin: 0;
-    padding: 0;
+    // padding: .55rem;
+    background-color: $light-gray;
+    font-weight: 500;
+    border-bottom: .1rem solid $nw-blue;
 
     li {
       display: inline;
-      padding: 0 2rem 0 0;
+      float: left;
+      padding: .56rem !important;
+      // border-right: .1rem solid $black;
+      transition: .2s ease;
+      color: $nw-blue;
+      // background-color: gray;
+
+      &:hover {
+        background-color: darken($light-gray, 10%);
+        color: $black;
+      }
     }
   }
 
+  .tab-content-container {
+
+    padding: .56rem !important;
+
+
+    .tab-content {
+      display: none;
+    }
+
+    .active-tab {
+      display: block;
+    }
+
+  }
 
 }

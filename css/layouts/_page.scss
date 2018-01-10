@@ -8,6 +8,15 @@ article.page {
     margin-bottom: 1.75rem;
   }
 
+  h1 + section,
+  h2 + section,
+  h3 + section,
+  h4 + section,
+  h5 + section {
+    padding-top: .71rem;
+  }
+
+
   // Leading headers are closer to their child paragraphs
   h1 + p,
   h2 + p,

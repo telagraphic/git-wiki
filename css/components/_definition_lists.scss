@@ -4,7 +4,7 @@ dl.definition-list {
 
 
   dt {
-    background-color: #c3c1c1;
+    background-color: $light-gray;
     padding: .34rem;
     color: #1e57a6;
     font-weight: 500;
@@ -13,7 +13,7 @@ dl.definition-list {
     border-bottom: .1rem black solid;
 
     &:hover {
-      background-color: darken(#c3c1c1, 5%);
+      background-color: darken($light-gray, 10%);
       color: lighten(#1e57a6, 15%);
     }
 

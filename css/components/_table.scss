@@ -6,7 +6,7 @@ table {
 
 
   thead {
-    background: #e6e6e6;
+    background: $light-gray;
     font-weight: 500;
 
     td {
@@ -40,14 +40,13 @@ table {
 
       a {
         text-decoration: none;
-        color: black;
+        color: $black;
         transition: .4s ease;
 
         &:hover {
           color: $nw-blue;
         }
       }
-
     }
 
 
