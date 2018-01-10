@@ -49,7 +49,7 @@ permalink: /style-guide/
       </a>
     </li>
     <li>
-      <a href="{{site.baseurl}}/style-guide#tabs" class="button">
+      <a href="{{site.baseurl}}/style-guide#box" class="button">
         Boxes
       </a>
     </li>
@@ -322,26 +322,89 @@ permalink: /style-guide/
 
 <section id="tabs">
   <h2>Tabs</h2>
+  <p>
+    Tabs are great for displaying data with images and text.
+  </p>
 
   <section class="tabs">
     <ul class="grid-row tab-links">
       <li class="active-tab-link">Story Card</li>
       <li>Tech Card</li>
-      <li>Test Card</li>
+      <li>Defect Card</li>
+      <li>Error Card</li>
     </ul>
 
     <section class="tab-content-container">
       <section class="tab-content active-tab">
+        <p>
+          They are linked to RTC. Developer works on the card,
+          then moves ready to test for line tester to work on.
+          They are sent the BAO for Sign-Off when testing is complete.
+        </p>
         <img src="{{site.baseurl}}/assets/img/cardwall/story-green-card.jpg" alt="">
       </section>
       <section class="tab-content">
+        <p>
+          Tech cards are worked by only the developer. They are not tested by the line.
+        </p>
         <img src="{{site.baseurl}}/assets/img/cardwall/tech-yellow-card.jpg" alt="">
       </section>
       <section class="tab-content">
+        <p>
+          Defect cards are worked on by Line Developer, then sent back to tester who created it.
+          In Vegas line, these are defects found outside of the team and assigned to our dev's to fix.
+        </p>
         <img src="{{site.baseurl}}/assets/img/cardwall/defect-pink-card.jpg" alt="">
+      </section>
+      <section class="tab-content">
+        <p>
+          Line Error cards are fixed by Line Dev, then retested by Line Tester who found them.
+          In Vegas line, they are 'defects' found within line testing.
+        </p>
+        <img src="{{site.baseurl}}/assets/img/cardwall/error-blue-card.jpg" alt="">
       </section>
     </section>
 
+  </section>
+
+  <section id="box">
+    <h2>Box</h2>
+    <p>Good for hightlighting a tip, trick, gotcha or a don't do.</p>
+
+    <section class="box">
+      <section class="icon-thumbsdown"></section>
+      <p>
+        Warning: Don't Do this!  This will cause permanent damage to the system.
+        Or will screw up the database/policy/data sheet.
+
+        This will cause permanent damage to the system.
+        Or will screw up the database/policy/data sheet.
+      </p>
+    </section>
+
+    <section class="box">
+      <section class="icon-paperclip"></section>
+      <p>
+        Save for later.  You'll use this information often for user testing.
+        Keep it handy or bookmarked for later review.
+      </p>
+    </section>
+
+    <section class="box">
+      <section class="icon-thumbsup"></section>
+      <p>
+        Save for later.  You'll use this information often for user testing.
+        Keep it handy or bookmarked for later review.
+      </p>
+    </section>
+
+    <section class="box">
+      <section class="icon-thumbsup"></section>
+      <p>
+        Best practice is to follow the above or below advice.
+        It will save time, the right way to do it.
+      </p>
+    </section>
 
   </section>
 

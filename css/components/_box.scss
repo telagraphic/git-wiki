@@ -1,0 +1,18 @@
+@import "../utils/base_colors";
+
+.box {
+  background-color: $light-gray;
+  padding: 1rem;
+  border-left: .35rem solid $nw-blue;
+  border-right: .35rem solid $nw-blue;
+
+  [class*='icon-'] {
+    float: left;
+  }
+
+  p {
+    padding: .5rem;
+    font-weight: 700;
+    color: $red;
+  }
+}
