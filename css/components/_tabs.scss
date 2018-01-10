@@ -6,7 +6,6 @@
   ul.tab-links {
     list-style: none;
     margin: 0;
-    // padding: .55rem;
     background-color: $light-gray;
     font-weight: 500;
     border-bottom: .1rem solid $nw-blue;
@@ -14,11 +13,10 @@
     li {
       display: inline;
       float: left;
-      padding: .56rem !important;
-      // border-right: .1rem solid $black;
-      transition: .2s ease;
+      padding: .50rem !important;
+      border-right: .1rem solid $nw-blue;
       color: $nw-blue;
-      // background-color: gray;
+      transition: .2s ease;
 
       &:hover {
         background-color: darken($light-gray, 10%);
@@ -41,5 +39,9 @@
     }
 
   }
+}
 
+.active-tab-link {
+  color: $black !important;
+  background-color: darken($light-gray, 10%);
 }

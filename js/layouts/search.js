@@ -1,4 +1,5 @@
 search_button.addEventListener('click', function(event) {
+  nav.classList.toggle("nav-full-width");
   search_form.classList.toggle('toggle-search-form');
   nav.classList.toggle('toggle-nav-background');
   search_input.focus();

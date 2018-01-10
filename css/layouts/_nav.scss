@@ -1,8 +1,12 @@
+.nav-full-width {
+  width: 100%;
+}
+
 nav {
   background-color: none;
   opacity: 1;
   position: fixed;
-  width: 100%;
+  width: 6rem;
   z-index: 10;
   transition: background-color .4s ease;
   height: 3rem;
