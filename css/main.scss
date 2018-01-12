@@ -6,7 +6,7 @@
 @import "base/normalize";
 @import "base/typography";
 @import "base/defaults";
-
+@import "base/print";
 
 // vendor specific styles
 @import "vendor/hamburgers/hamburgers";
@@ -29,87 +29,24 @@
 @import "components/buttons";
 @import "components/definition_lists";
 @import "components/tabs";
-@import "components/box";
+@import "components/icon_box";
 
-
-/* Icons */
-.icon-search {
+@mixin icon($url) {
   height: 5rem;
   width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/zoom.svg" );
+  margin: 0 .5rem;
+  background-image: url( $url );
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
 }
 
-.icon-paperclip {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/clip.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-book {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/book.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-thumbsup {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/thumbs_up.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-thumbsdown {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/thumbs_down.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-lightbulb {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/lightbulb_idea.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-monitor {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/monitor.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-laptop {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/laptop.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.icon-clip-container {
-  height: 5rem;
-  width: 5rem;
-  background-image: url( "{{ site.baseurl }}/assets/icons/svg/clip.svg" );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
+.icon-search { @include icon("{{site.baseurl}}/assets/icons/svg/zoom.svg"); }
+.icon-paperclip { @include icon("{{site.baseurl}}/assets/icons/svg/clip.svg"); }
+.icon-book { @include icon("{{ site.baseurl }}/assets/icons/svg/book.svg"); }
+.icon-thumbsup { @include icon("{{ site.baseurl }}/assets/icons/svg/thumbs_up.svg"); }
+.icon-thumbsdown { @include icon("{{ site.baseurl }}/assets/icons/svg/thumbs_down.svg"); }
+.icon-lightbulb { @include icon("{{ site.baseurl }}/assets/icons/svg/lightbulb_idea.svg"); }
+.icon-monitor { @include icon("{{ site.baseurl }}/assets/icons/svg/monitor.svg"); }
+.icon-laptop { @include icon("{{ site.baseurl }}/assets/icons/svg/laptop.svg"); }
+.icon-clip-container { @include icon("{{ site.baseurl }}/assets/icons/svg/clip.svg"); }
