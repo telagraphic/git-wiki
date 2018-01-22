@@ -1,3 +1,5 @@
+@import "../utils/base_colors";
+
 .container {
  max-width: 100%;
  background: none;
@@ -5,11 +7,11 @@
 
 #content-section {
   position: relative;
+  transition: .2s ease;
 }
 
 .toggle-content {
-  visibility: hidden;
-  opacity: 0;
+  display: none;
 }
 
 .main-content {

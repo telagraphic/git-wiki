@@ -8,3 +8,7 @@ menu_button.addEventListener('click', function(event) {
 hamburger.addEventListener('click', function() {
   hamburger.classList.toggle("is-active");
 }, false);
+
+
+var nav_menu = document.querySelectorAll(".sub-menu");
+console.log(nav_menu);
