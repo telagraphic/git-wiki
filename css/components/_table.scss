@@ -30,10 +30,6 @@ table {
     tr {
       border-bottom: .1rem solid $nw-blue;
 
-      // &:nth-child(even) {
-      //   background: #e4e4e4;
-      // }
-
       &:last-child {
         border-bottom: none;
       }
@@ -48,10 +44,5 @@ table {
         }
       }
     }
-
-
   }
-
-
-
 }

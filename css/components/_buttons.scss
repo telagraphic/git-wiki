@@ -3,7 +3,7 @@
 @mixin basic-button {
   border: none;
   outline: none;
-  color: white;
+  color: $button-text;
   padding: .5rem;
   border-radius: .55rem;
   transition: background-color .3s ease;
@@ -17,13 +17,13 @@ a.button-link {
   text-decoration: none;
 
   button[type='button'] {
-    color: white;
+    color: $button-text;
     text-decoration: none;
     transition: .3s ease;
 
     &:hover {
       text-decoration: none;
-      color: black;
+      color: $button-text-hover;
     }
   }
 }

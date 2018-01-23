@@ -35,7 +35,7 @@ var tipuesearch = {"pages": [{
     "url": "/lyonsn1/git-wiki/icons/"
   },{
     "title": "home",
-    "text": "Welcome to Line/Project Property and Auto insurance development line intro stuff goes here. Onboarding Projects Products Transactions Glossary of Terms Contacts and Teams Requirements Development Testing Wiki Guide",
+    "text": "Welcome to Line/Project Line/Project information goes here. Onboarding Projects Products Transactions Glossary of Terms Contacts and Teams Requirements Development Testing Wiki Guide",
     "tags": "",
     "url": "/lyonsn1/git-wiki/"
   },{

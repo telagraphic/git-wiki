@@ -6,15 +6,15 @@ dl.definition-list {
   dt {
     background-color: $light-gray;
     padding: .34rem;
-    color: #1e57a6;
+    color: $nw-blue;
     font-weight: 500;
     position: relative;
     transition: .4s ease;
-    border-bottom: .1rem black solid;
+    border-bottom: .1rem $definition-border solid;
 
     &:hover {
       background-color: darken($light-gray, 10%);
-      color: lighten(#1e57a6, 15%);
+      color: lighten($nw-blue, 15%);
     }
 
   }
