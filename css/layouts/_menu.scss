@@ -44,27 +44,30 @@
   ul {
     list-style: none;
     text-align: left;
-    // padding: .75rem;
   }
 
-  li {
-    background-color: $nw-blue;
-    transition: .2s ease;
-    padding: .55rem;
-    border-left: 5px solid $nw-blue;
-    font-weight: 400;
+  a {
+    color: white;
+    text-decoration: none;
 
     &:hover {
-      background-color: lighten($nw-blue, 10%);
-      border-left: 5px solid white;
+      color: darken(white, 10%);
     }
 
-    a {
-      color: white;
-      text-decoration: none;
+    &:first-child {
+      font-weight: 900;
+    }
+
+    li {
+      background-color: $nw-blue;
+      transition: .2s ease;
+      padding: 1.25rem .55rem;
+      border-left: 5px solid $nw-blue;
+      font-weight: 400;
 
       &:hover {
-        color: darken(white, 10%);
+        background-color: lighten($nw-blue, 10%);
+        border-left: 5px solid white;
       }
     }
   }

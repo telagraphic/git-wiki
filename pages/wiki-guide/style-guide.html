@@ -49,6 +49,11 @@ permalink: /style-guide/
       </a>
     </li>
     <li>
+      <a href="{{site.baseurl}}/style-guide#code-highlight" class="button">
+        Code Highlight
+      </a>
+    </li>
+    <li>
       <a href="{{site.baseurl}}/style-guide#icon-box" class="button">
         Icon Box
       </a>
@@ -380,6 +385,26 @@ permalink: /style-guide/
         <img src="{{site.baseurl}}/assets/img/cardwall/error-blue-card.jpg" alt="">
       </section>
     </section>
+  </section>
+
+  <section id="code-highlight">
+    <h2>Code Highlight</h2>
+    <p>
+      Code highlighting is perfect for scripts.  
+    </p>
+
+    <pre>
+      <code class="language-sql">
+        select *
+        from policies p, rider r
+        where p.Number = r.Number
+        and p.Product = 31
+        and p.Status = 8
+        and r.RiderCode = 17
+      </code>
+    </pre>
+
+
   </section>
 
   <section id="icon-box">

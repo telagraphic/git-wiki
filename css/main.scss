@@ -11,7 +11,7 @@
 // vendor specific styles
 @import "vendor/hamburgers/hamburgers";
 @import "vendor/tipuesearch/tipuesearch";
-
+@import "vendor/prism/prism";
 
 // layout - styles for specific components
 @import "layouts/grid";
@@ -20,17 +20,18 @@
 @import "layouts/menu";
 @import "layouts/search";
 
-
 // components - buttons, inputs, links
-@import "components/table";
-@import "components/text";
-@import "components/lists";
-@import "components/top_links";
 @import "components/buttons";
 @import "components/definition_lists";
-@import "components/tabs";
 @import "components/icon_box";
+@import "components/lists";
+@import "components/table";
+@import "components/tabs";
+@import "components/text";
+@import "components/top_links";
 
+
+// icon boxes
 @mixin icon($url) {
   height: 5rem;
   width: 5rem;
