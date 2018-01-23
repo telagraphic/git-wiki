@@ -24,7 +24,7 @@
   }
   /* optional: show position indicator in red */
   &::-webkit-scrollbar-thumb {
-      background: #FF0000;
+      // background: #FF0000;
   }
 }
 
@@ -45,12 +45,6 @@
     list-style: none;
     text-align: left;
     // padding: .75rem;
-  }
-
-  .sub-menu {
-    @media(max-width: 500px) {
-      height: 0;
-    }
   }
 
   li {
@@ -77,6 +71,12 @@
 
   .link-top-header {
     font-weight: 900;
+  }
+}
+
+.sub-menu {
+  @media(max-width: 500px) {
+    height: 0;
   }
 }
 

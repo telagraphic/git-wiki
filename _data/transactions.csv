@@ -1,0 +1,15 @@
+name,code,trxnumber,link
+Payment,PA,70,70-payment.html
+Pour-In,PI,72,72-pour-in.html
+Fund Transfer,XF,90,90-fund-transfer.html
+Asset Rebalancing,ARB,94,94-asset-rebalancing.html
+Dollar-Cost Averaging,DC,95,95-dca.html
+Automatic Exchange,AT,96,96-automatic-exchange.html
+End-Result Exchange,ER,100,100-end-result-exchange.html
+Partial Surrender,WD,150,150-partial-surrender.html
+Loan,LO,170,170-loan.html
+Loan Repayment,LR,140,140-loan-repayment.html
+Surrender,SR,190,190-surrender.html
+Death,DH,200,200-death.html
+Insurance Charge,MD,210,210-insurance-charge.html
+Lapse,LP,220,220-lapse.html
