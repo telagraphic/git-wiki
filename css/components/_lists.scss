@@ -2,18 +2,14 @@
 
 ul.list-links {
 
-  li {
-
-
-  }
+  li {}
 
   a {
     color: $nw-blue;
     font-weight: 500;
-    transition: .4s ease;
+    transition: color 4s ease;
 
     &:hover {
-      color: lighten($nw-blue, 5%);
       color: $primary-hover;
     }
   }
