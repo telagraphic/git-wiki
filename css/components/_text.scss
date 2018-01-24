@@ -3,7 +3,7 @@
 a {
   text-decoration: none;
   color: $nw-blue;
-  transition: .4s ease;
+  transition: color, text-decoration .4s ease;
 
   &:hover {
     text-decoration: underline;
@@ -28,7 +28,7 @@ article {
     a {
       color: $inline-link;
       text-decoration: underline;
-      transition: .4s ease;
+      transition: text-decoration, color .4s ease;
 
       &:hover {
         color: $secondary-hover;

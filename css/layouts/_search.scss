@@ -10,7 +10,7 @@
   opacity: 0;
   visibility: hidden;
   overflow-x: hidden;
-  transition: .2s ease;
+  transition: opacity, visibility .2s ease;
 }
 
 .toggle-results {

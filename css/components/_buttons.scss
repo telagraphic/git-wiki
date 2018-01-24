@@ -19,7 +19,7 @@ a.button-link {
   button[type='button'] {
     color: $button-text;
     text-decoration: none;
-    transition: .3s ease;
+    transition: color .3s ease;
 
     &:hover {
       text-decoration: none;

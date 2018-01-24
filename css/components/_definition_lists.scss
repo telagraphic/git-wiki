@@ -9,7 +9,7 @@ dl.definition-list {
     color: $nw-blue;
     font-weight: 500;
     position: relative;
-    transition: .4s ease;
+    transition: background-color, color .4s ease;
     border-bottom: .1rem $definition-border solid;
 
     &:hover {

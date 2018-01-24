@@ -37,7 +37,7 @@ table {
       a {
         text-decoration: none;
         color: $black;
-        transition: .4s ease;
+        transition: color .4s ease;
 
         &:hover {
           color: $nw-blue;
