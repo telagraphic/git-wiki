@@ -22,20 +22,13 @@
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
   }
-  /* optional: show position indicator in red */
-  &::-webkit-scrollbar-thumb {
-      // background: #FF0000;
-  }
+
 }
-
-
 
 #menu-columns {
   position: relative;
   top: 4rem;
   background-color: $nw-blue;
-
-
 
   section {
     @media(max-width: 900px) {
