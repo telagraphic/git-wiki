@@ -5,17 +5,14 @@
   header {
     h3 {
       float: left;
+      padding: 0 1rem 0 0;
     }
 
     h4 {
-      padding: 0 0 0 1rem;
+      padding: 0;
       float: left;
       font-size: 1.173913rem;
       line-height: 1.6521739rem;
-
-      &:hover {
-        color: $nw-blue;
-      }
     }
   }
 
@@ -44,19 +41,10 @@
     -webkit-margin-start: .5rem;
     position: relative;
 
-
     &.show-data-definition {
       padding: .5rem 0 1rem 0;
       opacity: 1;
       height: 100%;
     }
   }
-}
-
-
-@keyframes definition-list-animation {
-    0%   {opacity: 0; height: 0;}
-    33%  {opacity: 33%; height: 33%;}
-    66%  {opacity: 66%; height: 66%;}
-    100% {opacity: 100%; height: 100%;}
 }
