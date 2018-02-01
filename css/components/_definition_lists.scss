@@ -1,6 +1,23 @@
 @import "../utils/base_colors";
 
-dl.definition-list {
+.definition-list {
+
+  header {
+    h3 {
+      float: left;
+    }
+
+    h4 {
+      padding: 0 0 0 1rem;
+      float: left;
+      font-size: 1.173913rem;
+      line-height: 1.6521739rem;
+
+      &:hover {
+        color: $nw-blue;
+      }
+    }
+  }
 
 
   dt {
@@ -13,8 +30,8 @@ dl.definition-list {
     border-bottom: .1rem $definition-border solid;
 
     &:hover {
-      background-color: darken($light-gray, 10%);
-      color: lighten($nw-blue, 15%);
+      background-color: lighten($light-gray, 5%);
+      color: lighten($nw-blue, 10%);
     }
 
   }
@@ -27,10 +44,19 @@ dl.definition-list {
     -webkit-margin-start: .5rem;
     position: relative;
 
+
     &.show-data-definition {
       padding: .5rem 0 1rem 0;
       opacity: 1;
       height: 100%;
     }
   }
+}
+
+
+@keyframes definition-list-animation {
+    0%   {opacity: 0; height: 0;}
+    33%  {opacity: 33%; height: 33%;}
+    66%  {opacity: 66%; height: 66%;}
+    100% {opacity: 100%; height: 100%;}
 }
