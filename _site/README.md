@@ -3,11 +3,12 @@
 Git Wiki is for line documentation, onboarding and project knowledge sharing!
 Powered by [Jekyll](https://jekyllrb.com/docs/home/),
 served by [Github Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
-and nurtured by committed associates :)
-This repo is a wiki starter project for someone who has basic html, css and ruby knowledge.  Check the getting started page for instructions.  Contact Nick Lyons @ lyonsn@nationwide.com for assistance and questions.  
+and maintained by committed associates :)
+This repo is a wiki starter project for someone who has basic html, css and ruby knowledge.  Check the getting started page for instructions.  Contact Nick Lyons lyonsn@nationwide.com for assistance and questions.  
 
 ## Clone, Install, Run Locally
 
+First make sure you at least __Ruby 2.3.3p222__ before setting up this repo.
 
 ```
 git clone https://github.nwie.net/lyonsn1/wiki-starter.git
@@ -50,18 +51,6 @@ https://pages.github.nwie.net/lyonsn1/wiki-starter/
 
 - [Jekyll on Github Pages Enterprise](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 
-### Responsive Grid
-- [Float Based](https://css-tricks.com/dont-overthink-it-grids/)
-- [CSS Autoprefixer](https://github.com/octopress/autoprefixer)
-
-### Typography
-- [Modular Scale](https://www.gridlover.net/try)
-- [Fluid Typography](https://madebymike.com.au/writing/precise-control-responsive-typography/)
-
-### Wiki Gem
-- [Jekyll Admin CMS](https://jekyll.github.io/jekyll-admin/)
-- http://localhost:4000/admin
-
 ### Front End Search
 - [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search/tree/gh-pages)
 - [Scroll Lock](http://mohammadyounes.github.io/jquery-scrollLock/)
@@ -79,18 +68,24 @@ Need to install Node.js to fix.
 ## Step 1: Front Matter
 
 Before you deploy to github, make sure any new pages or posts have the requisite front matter.
-A title at the very minimum will do.
+A title and a permalink at the very minimum will do.
 
 ``` html
 ---
 title: page title goes here
+permalink: /path/file/
 ---
 ```
 
 Jekyll uses front matter during the build process, just add this to the very top of the page or post.
 It goes before any html or markdown, else you will have build errors.
 
-## Step 2: Build script
+## Step 2: Test Locally
+
+Run the project on your local machine to test your changes!
+__bundle exec jekyll serve__
+
+## Step 3: Build script
 
 Before pushing changes to github pages, you'll need to re-index the search.
 This is a json object file that uses tipuesearch.js to index all the pages in the project.
@@ -99,10 +94,6 @@ Run:
 ```
 rake index
 ```
-
-## Step 3: Test Locally
-
-__bundle exec jekyll serve__
 
 ## Step 4: Deploy
 
