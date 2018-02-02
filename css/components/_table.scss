@@ -1,3 +1,4 @@
+
 @import "../utils/base_colors";
 
 table {
@@ -35,7 +36,7 @@ table {
       }
 
       a {
-        text-decoration: none;
+        text-decoration: underline;
         color: $black;
         transition: color .4s ease;
 

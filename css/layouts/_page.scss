@@ -54,10 +54,25 @@ article.page {
   p + h1,
   p + h2,
   p + h3,
+  p + h4,
   ul + h1,
   ul + h2,
-  ul + h3 {
+  ul + h3,
+  ul + h4 {
     padding-top: .89rem
+  }
+
+  h1 + h2,
+  h2 + h3,
+  h3 + h4 {
+    padding-top: 1rem;
+  }
+
+  h1 + ul,
+  h2 + ul,
+  h3 + ul,
+  h4 + ul {
+    padding-top: 1rem;
   }
 
 
@@ -66,7 +81,6 @@ article.page {
   * + p {
     margin-bottom: 1rem;
   }
-
 
   // bullet points are located within a section and
 
