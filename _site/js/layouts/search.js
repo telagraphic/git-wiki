@@ -20,6 +20,7 @@ search_input.addEventListener('keydown', function(event) {
     // show search results container
     search_section.classList.add('toggle-results');
     search_close_button.classList.add('toggle-search-results');
+    content_section.classList.toggle('toggle-content');
 
     // hide menu when searching
     if (menu.classList.contains('show-menu')) {

@@ -8,6 +8,19 @@ document.addEventListener('keydown', (event) => {
     circle.classList.toggle('white-circle');
     content_section.classList.toggle('toggle-content');
     nav_icons.classList.toggle('toggle-icons');
+
+    if (menu.classList.contains('show-menu')) {
+      nav_icons.classList.add('toggle-icons');
+    } else  {
+      nav_icons.classList.remove('toggle-icons');
+    }
+
+    if (search_form.classList.contains('toggle-search-form')) {
+      nav_icons.classList.add('toggle-icons');
+    } else  {
+      nav_icons.classList.remove('toggle-search-form');
+    }
+
   } else if (event.ctrlKey && keyName === "x") {
     search_icon.classList.toggle("open");
     nav_icons.classList.toggle('toggle-icons');
@@ -15,6 +28,20 @@ document.addEventListener('keydown', (event) => {
     search_form.classList.toggle('toggle-search-form');
     nav.classList.toggle('toggle-nav-background');
     search_input.focus();
+
+    if (menu.classList.contains('show-menu')) {
+      nav_icons.classList.add('toggle-icons');
+    } else  {
+      nav_icons.classList.remove('toggle-icons');
+    }
+
+    if (search_form.classList.contains('toggle-search-form')) {
+      nav_icons.classList.add('toggle-icons');
+    } else  {
+      nav_icons.classList.remove('toggle-search-form');
+    }
+
+    
   } else if (keyName === "Escape") {
     search_form.classList.remove('toggle-search-form');
     nav.classList.remove('toggle-nav-background');

@@ -27,7 +27,7 @@ var tipuesearch = {"pages": [{
     "title": "Development",
     "text": "Developer Put information about development here!",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/development/home/"
+    "url": "/lyonsn1/git-wiki/development/"
   },{
     "title": "Testing",
     "text": "Financial Terms Basic Policy Terms Deductible The amount the customer must pay before insurance kicks in. Coverage A general term for all the types of coverages against possible risks. The more coverage the higher the premium. A general term for all the types of coverages against possible risks. The more coverage the higher the premium. Primary Insured Usually the policy holder, it refers to who the insurance will protect. MVR Motor Vehicle Records contain traffic violations and related information about the vehicle or driver. Secondary Insured Additional individual to be insured under the same coverages as the Primary.",
@@ -37,7 +37,7 @@ var tipuesearch = {"pages": [{
     "title": "Testing",
     "text": "Glossary of Terms Financial Terms Business Terms Technical Terms",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/glossary/home/"
+    "url": "/lyonsn1/git-wiki/glossary/"
   },{
     "title": "icons",
     "text": "Icons",
@@ -62,7 +62,7 @@ var tipuesearch = {"pages": [{
     "title": "Products",
     "text": "Products Name Label Code IVUL Accumulator VUL Accumulator 31 IVUL Protector VUL Protector 32 Indexed Universal Life INDEXED UL 22 Indexed Universal Life Accumulator IUL Accumulator 28 Indexed Universal Life Protector IUL Protector 30 Accumulation Variable Universal Life Accum VUL 46 Survivorship Universal Life SUL 42 Protection Variable Universal Life PVUL 43 Single Premium Universal Life SPUL 45 Current Assumption Universal Life Current Assumption UL (CUAL) 44 No-Lapse Guarantee SUL II NLG SUL II 20 No-Lapse Guarantee UL II NLGULII 12 NGL NGL 18 NLGUL NLGUL 16 Long Term Care LTC 27 NBSG CVUL 1 NBSG Sa Boli 14 NBSG FEVUL 1 NBSG SVUL 4 NBSG CVUL 5 NBSG FEUL 13 NBSG BOLI 6 NBSG CVUL 1",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/products/home/"
+    "url": "/lyonsn1/git-wiki/products/"
   },{
     "title": "Project Overview",
     "text": "Project Overview Soap UI SQL Explorer",
@@ -72,7 +72,7 @@ var tipuesearch = {"pages": [{
     "title": "PLT Projects",
     "text": "Comp Rater Copy this starter-page.html when creating a new page. Remove or alter components that fit your needs. Don't forget to update your links. Internet Copy this starter-page.html when creating a new page. Remove or alter components that fit your needs. Don't forget to update your links. Policy Center Copy this starter-page.html when creating a new page. Remove or alter components that fit your needs. Don't forget to update your links.",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/projects/home/"
+    "url": "/lyonsn1/git-wiki/projects/"
   },{
     "title": "Testing Overview",
     "text": "Requirements Overview What and How Important documents",
@@ -82,7 +82,7 @@ var tipuesearch = {"pages": [{
     "title": "Requirements",
     "text": "Requirements Put information about requirements here!",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/requirements/home/"
+    "url": "/lyonsn1/git-wiki/requirements/"
   },{
     "title": "Starter Docs",
     "text": "Starter Docs Policy Center Region List: List of Testing Regions. RTC: Story/Tech card repository. RTC: Requirements",
@@ -107,7 +107,7 @@ var tipuesearch = {"pages": [{
     "title": "Testing",
     "text": "Line Testing Testing Overview Test Plans Defects How To's",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/testing/home/"
+    "url": "/lyonsn1/git-wiki/testing/"
   },{
     "title": "onboarding - tools",
     "text": "Tools Oracle Database - Path to Download User Interface - Path to Download SQL Developer - Path to Download Access/Permissions UI - try making a payment SQL Server - ask Tech lead for permissions RTC - Ask IM for access RRC - Ask IM for access",
@@ -117,7 +117,7 @@ var tipuesearch = {"pages": [{
     "title": "Transactions",
     "text": "Transactions Name Code Transaction Code {% for transaction in site.data.transactions %} {{transaction.name}} {{transaction.code}} {{transaction.trxnumber}} {% endfor %}",
     "tags": "",
-    "url": "/lyonsn1/git-wiki/transactions/home/"
+    "url": "/lyonsn1/git-wiki/transactions/"
   },{
     "title": "Useful Links",
     "text": "Useful Links Policy Center Region List: List of Testing Regions. RTC: Story/Tech card repository. RTC: Requirements",
