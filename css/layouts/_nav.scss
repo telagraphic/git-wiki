@@ -14,7 +14,7 @@ nav {
   height: 3rem;
 
   &.toggle-nav-background {
-    background-color: black;
+    width: 100%;
   }
 
   ul {
@@ -24,6 +24,7 @@ nav {
     opacity: 0;
     transition: opacity .2s ease;
     z-index: 10;
+    width: 6rem;
 
     &.toggle-icons {
       visibility: visible;
@@ -56,9 +57,12 @@ nav {
     background-color: none;
     opacity: 0;
     top: -5rem;
+    height: 3rem;
     transition: opacity .2s ease;
+    width: 100%;
 
     &.toggle-search-form {
+      background-color: black;
       opacity: 1;
       top: 0;
     }
