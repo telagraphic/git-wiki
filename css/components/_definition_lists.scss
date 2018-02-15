@@ -1,21 +1,17 @@
 @import "../utils/base_colors";
 
 .definition-list {
+  position: relative;
+  padding: 1rem 0;
 
-  header {
-    h3 {
-      float: left;
-      padding: 0 1rem 0 0;
-    }
-
-    h4 {
-      padding: 0;
-      float: left;
-      font-size: 1.173913rem;
-      line-height: 1.6521739rem;
-    }
+  span {
+    float: right;
+    z-index: 20;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    top: 2.3rem;
   }
-
 
   dt {
     background-color: $light-gray;
@@ -25,9 +21,10 @@
     position: relative;
     transition: background-color, color .4s ease;
     border-bottom: .1rem $definition-border solid;
+    font-family: 'Roboto Condensed', sans-serif;
 
     &:hover {
-      background-color: lighten($light-gray, 5%);
+      background-color: darken($light-gray, 5%);
       color: lighten($nw-blue, 10%);
     }
 
@@ -40,6 +37,7 @@
     transition: padding .4s ease;
     -webkit-margin-start: .5rem;
     position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
 
     &.show-data-definition {
       padding: .5rem 0 1rem 0;

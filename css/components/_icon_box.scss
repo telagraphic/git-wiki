@@ -2,17 +2,20 @@
 
 .box {
   background-color: $light-gray;
-  padding: 1rem;
-  border-left: .35rem solid $nw-blue;
-  border-right: .35rem solid $nw-blue;
+  padding: 1rem 0rem;
+  margin: 1rem 0;
+  border-left: .35rem solid $tab-border;
+  border-right: .35rem solid $tab-border;
+
 
   [class*='icon-'] {
     float: left;
   }
 
   p {
+    font-family: 'Roboto Condensed', sans-serif;
     padding: .5rem;
     font-weight: 700;
-    color: $red;
+    color: $icon-text;
   }
 }

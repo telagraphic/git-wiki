@@ -14,7 +14,7 @@
 
 
 a.button-link {
-  text-decoration: none;
+  text-decoration: none !important;
 
   button[type='button'] {
     color: $button-text;
@@ -61,5 +61,17 @@ a.button-link {
 
   &:hover {
     background-color: lighten( $green, 5% );
+  }
+}
+
+
+.nav-buttons {
+  padding: 1.5rem 0;
+
+  .prev {
+    float: left;
+  }
+  .next {
+    padding-left: 1.5rem;
   }
 }

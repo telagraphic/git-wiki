@@ -41,7 +41,7 @@ document.addEventListener('keydown', (event) => {
       nav_icons.classList.remove('toggle-search-form');
     }
 
-    
+
   } else if (keyName === "Escape") {
     search_form.classList.remove('toggle-search-form');
     nav.classList.remove('toggle-nav-background');

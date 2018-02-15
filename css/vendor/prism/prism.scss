@@ -31,7 +31,7 @@ green     #859900
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black; /* base00 */
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	// font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -45,16 +45,19 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	font-family: 'Roboto Condensed', monospace;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	background: #1E57A6; /* base02 */
+	font-family: 'Roboto Condensed', monospace;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	background: #1E57A6; /* base02 */
+	font-family: 'Roboto Condensed', monospace;
 }
 
 /* Code blocks */
@@ -62,6 +65,7 @@ pre[class*="language-"] {
 	margin: .5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
+	font-family: 'Roboto Condensed', monospace;
 }
 
 :not(pre) > code[class*="language-"],

@@ -23,81 +23,93 @@
 }
 
 
-// Vertical Rhythm Rules
+ul, ol {
+  padding: 1rem 0;
+  list-style-position: outside;
 
-article.page {
-  z-index: 2;
-
-  // Each section within an article is separated by space
-  section {
-    margin-bottom: 1.75rem;
-  }
-
-  h1 + section,
-  h2 + section,
-  h3 + section,
-  h4 + section,
-  h5 + section {
-    padding-top: .71rem;
-  }
-
-
-  // Leading headers are closer to their child paragraphs
-  h1 + p,
-  h2 + p,
-  h3 + p,
-  h4 + p,
-  h5 + p {
-    padding-top: .71rem;
-  }
-
-  p + h1,
-  p + h2,
-  p + h3,
-  p + h4,
-  ul + h1,
-  ul + h2,
-  ul + h3,
-  ul + h4 {
-    padding-top: .89rem
-  }
-
-  h1 + h2,
-  h2 + h3,
-  h3 + h4 {
-    padding-top: 1rem;
-  }
-
-  h1 + ul,
-  h2 + ul,
-  h3 + ul,
-  h4 + ul {
-    padding-top: 1rem;
-  }
-
-
-  // sibling paragraphs have separation space but not too far away to maintain cohesion within a section
-
-  * + p {
-    margin-bottom: 1rem;
-  }
-
-  // bullet points are located within a section and
-
-  ul, ol {
-    margin-left: 1.5rem;
-    list-style-position: outside;
-    padding: 0rem;
-
-    // list elements have spacing between each li
-
-    li:first-child {
-      padding: .4rem 0;
-    }
-
-    li + li {
-      padding: .4rem 0;
-    }
+  li {
+    line-height: 2rem;
   }
 
 }
+
+
+
+// Vertical Rhythm Rules
+//
+// article.page {
+//   z-index: 2;
+//
+//   // Each section within an article is separated by space
+//   section {
+//     margin-bottom: 1.75rem;
+//   }
+//
+//   h1 + section,
+//   h2 + section,
+//   h3 + section,
+//   h4 + section,
+//   h5 + section {
+//     padding-top: .71rem;
+//   }
+//
+//
+//   // Leading headers are closer to their child paragraphs
+//   h1 + p,
+//   h2 + p,
+//   h3 + p,
+//   h4 + p,
+//   h5 + p {
+//     padding-top: .71rem;
+//   }
+//
+//   p + h1,
+//   p + h2,
+//   p + h3,
+//   p + h4,
+//   ul + h1,
+//   ul + h2,
+//   ul + h3,
+//   ul + h4 {
+//     padding-top: .89rem
+//   }
+//
+//   h1 + h2,
+//   h2 + h3,
+//   h3 + h4 {
+//     padding-top: 1rem;
+//   }
+//
+//   h1 + ul,
+//   h2 + ul,
+//   h3 + ul,
+//   h4 + ul {
+//     padding-top: 1rem;
+//   }
+//
+//
+//   // sibling paragraphs have separation space but not too far away to maintain cohesion within a section
+//
+//   * + p {
+//     margin-bottom: 1rem;
+//   }
+//
+//   // bullet points are located within a section and
+//
+//   ul, ol {
+//     margin-left: 1.5rem;
+//     list-style-position: outside;
+//     padding: 0rem;
+//
+//     // list elements have spacing between each li
+//
+//     li:first-child {
+//       padding: .4rem 0;
+//     }
+//
+//     li + li {
+//       padding: .4rem 0;
+//     }
+//   }
+//
+// }

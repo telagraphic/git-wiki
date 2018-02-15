@@ -6,7 +6,6 @@ ul.list-links {
 
   a {
     color: $nw-blue;
-    font-weight: 500;
     transition: color 4s ease;
 
     &:hover {
@@ -17,4 +16,10 @@ ul.list-links {
 
 ul.checkbox-list {
   list-style: none;
+
+  input[type='checkbox'] {
+    height: 20px;
+    width: 20px;
+    position: relative;
+  }
 }
