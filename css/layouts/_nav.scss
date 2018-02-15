@@ -25,6 +25,7 @@ nav {
     transition: opacity .2s ease;
     z-index: 10;
     width: 6rem;
+    padding: .3rem;
 
     &.toggle-icons {
       visibility: visible;
@@ -48,7 +49,6 @@ nav {
 
   #menu-button {
     position: relative;
-    top: 8px;
   }
 
   #search-form {
@@ -79,6 +79,7 @@ nav {
       display: block;
       margin: 0 auto;
       background: none;
+      font-family: 'Roboto Condensed', sans-serif;
 
       &:-webkit-autofill {
         background: none;
@@ -94,7 +95,7 @@ nav {
     }
 
     .search-results-button {
-      padding: .5rem;
+      padding: .3rem;
       border: none;
       outline: none;
       font-weight: bold;
@@ -156,8 +157,8 @@ nav {
 .handle {
   position: absolute;
   background-color: black;
-  top: 40px;
-  left: 33px;
+  top: 44px;
+  left: 36px;
   width: 26px;
   height: 4px;
   display: block;
@@ -169,7 +170,7 @@ nav {
 
 .open {
   .circle {
-    background: black;
+    background: $nw-blue;
     border-color: white;
   }
   .handle {
