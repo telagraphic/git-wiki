@@ -4,7 +4,11 @@ Git Wiki is for line documentation, onboarding and project knowledge sharing!
 Powered by [Jekyll](https://jekyllrb.com/docs/home/),
 served by [Github Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 and maintained by committed associates :)
-This repo is a wiki starter project for someone who has basic html, css and ruby knowledge.  Check the getting started page for instructions.  Contact Nick Lyons lyonsn@nationwide.com for assistance and questions.  
+This repo is a wiki starter project for someone who has basic html, css and ruby knowledge.  Check the getting started page for instructions.  Contact Nick Lyons lyonsn@nationwide.com for assistance and questions.
+
+# About
+Created by Nick Lyons for line documentation, guides, best-practices and useful bits of knowledge.
+This project is an attempt to capture and store all the knowledge up in our heads that we don't document. 
 
 ## Clone, Install, Run Locally
 
