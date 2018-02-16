@@ -65,6 +65,9 @@ $color_black_haze_approx: #f6f6f6;
 	font-family: sans-serif;
 	font-size: 1rem;
 	line-height: 1.6521739rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: black;
+	font-weight: bold;
 }
 #tipue_search_warning {
 	// font: 300 14px/1.7 Roboto, sans-serif;
@@ -92,8 +95,9 @@ $color_black_haze_approx: #f6f6f6;
 	a {
 		color: $color_cornflower_blue_approx;
 		text-decoration: none;
+		font-family: 'Roboto Condensed', sans-serif;
 		&:hover {
-			color: $color_fuscous_gray_approx;
+			color: $nw-blue;
 		}
 	}
 }
@@ -124,9 +128,6 @@ $color_black_haze_approx: #f6f6f6;
     text-decoration: none;
     font-weight: 700;
 		text-decoration: none;
-		&:hover {
-			color: $color_storm_dust_approx;
-		}
 	}
 }
 .tipue_search_content_text {

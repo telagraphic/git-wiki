@@ -228,202 +228,71 @@
     <section class="grid-row" id="content-section">
       <main class="main-content">
   <section class="article">
-  <h1>Article Page</h1>
+  <h1>Article Page Header</h1>
+
+<h2>Section Header</h2>
 
 <p>
-  Basic policy information screen.
+  <b>Vertical Rhythm</b>, or the spacing and proximity of headers and sub-headers in relation
+  to paragraphs and lists is useful for visually communicating what is related.
 </p>
-
-<h3 class="header-block">Primary Named Insured</h3>
 
 <p>
-  There can be two primary named insured.  For testing, just use one for most policy creation.
+  Notice the space above and below the headers, there is more above and less below to
+  visually convey associated content.  An equal distance above and below provides for a smooth
+  read but doesn't show header to content relationship very well.
 </p>
 
-<section class="tabs">
-  <ul class="grid-row tab-links">
-    <li class="active-tab-link">Name</li>
-    <li>Role</li>
-    <li>Addresses</li>
-  </ul>
-
-  <section class="tab-content-container">
-    <section class="tab-content active-tab">
-      <p>
-        If creating a new submission for a new account, you'll get an error asking to complete
-        Primary Insured information fields.  They aren't displayed on this screen.
-      </p>
-      <img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/name.png" alt="">
-
-      <p>
-        Click on the <b>blue underlined name</b> and complete required fields.
-      </p>
-      <img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/name-form.png" alt="">
-    </section>
-    <section class="tab-content">
-      <p>Nothing her to look at</p>
-    </section>
-    <section class="tab-content">
-      <p>
-        Add a secondary address here.
-      </p>
-      <img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/address.png" alt="">
-
-      <p> Use the checkbox to the far left for removing an address.</p>
-      <img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/address-remove.png" alt="">
-    </section>
-  </section>
-</section>
-
-
-<h3 class="header-block">Business Type</h3>
 <p>
-  Business Type info goes here.
+  Headers closer to their content shows a closeness, a relationship.  It's a subtle effect.
+  White space between headers shows distance or a distinct grouping of information.
 </p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/business-type.png" alt="">
 
-<section class="definition-list">
-  <header class="grid-row">
-    <h4 class="hide-show-all blue-button"> All</h4>
-  </header>
-  <dl>
-    <dt>New Business</dt>
-    <dd>
-      Most commonly used option for testing.
-    </dd>
-
-    <dt>State Transfer (IRT)</dt>
-    <dd>
-    </dd>
-
-    <dt>Spin</dt>
-    <dd>
-
-    </dd>
-
-    <dt>5th Vehicle</dt>
-    <dd>
-      Motor Vehicle Records contain traffic violations and related information
-      about the vehicle or driver.
-    </dd>
-
-    <dt>Transfer</dt>
-    <dd>
-      Additional individual to be insured under the same coverages as the Primary.
-    </dd>
-
-    <dt>Policy Transfer</dt>
-    <dd>
-      Additional individual to be insured under the same coverages as the Primary.
-    </dd>
-  </dl>
-</section>
-
-<h3 class="header-block">Secondary Named Insured</h3>
-<p>Not required for testing unless specified.  Skip this for most policy creation.</p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/secondary-insured.png" alt="">
-
-
-<h3 class="header-block">FCRA</h3>
 <p>
- <b>Required</b> to accept Yes.  A pop-up will display, click OK.
+  Use <b>h2</b> headers for top level sections and use <b>h3</b> for sub-sections or mini-chapters
+  for a topic.  These prinicples are coded for all elements on the page to provide a smoother reading
+  experience.
 </p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/fair-credit.png" alt="">
 
-<h3 class="header-block">Household Composition</h3>
+<ul class="list-links">
+  <li>
+    <a href="https://zellwk.com/blog/wrong-about-vertical-rhythm/">Vertical Rhythm</a>
+  </li>
+  <li>
+    <a href="https://iamsteve.me/blog/entry/a-guide-to-vertical-rhythm">Vertical Rhythm</a>
+  </li>
+  <li>
+    <a href="https://zellwk.com/blog/wrong-about-vertical-rhythm/">Vertical Rhythm</a>
+  </li>
+</ul>
+
+<h3>Project Decomp</h3>
+
 <p>
- For testing, default option of <b>No</b> is fine.
+  What UI changes are happening, <a href="#">feed changes</a>, database table validation.
+  Ask the dev what will I be validating? The UI, the database tables, or a report somewhere?
+  Testers and Dev's give a point estimate for suggested cards.
 </p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/household-composition.png" alt="">
 
-
-<h3 class="header-block">Additional Policy Details</h3>
 <p>
- For testing, do not need to select any options.
+  Most story cards never exceed 5 points. If they do, the card is too big.
+  You should find scenarios to move into another card. Don't estimate an 8 point card,
+  decompose it into smaller cards.
 </p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/additional-details.png" alt="">
 
+<img src="/lyonsn1/git-wiki/assets/img/policy-center/account/account-home.png" alt="">
 
-<h3 class="header-block">Policy Details</h3>
+<h3>3 Amigos</h3>
+
 <p>
- Policies can have different terms.  A term is how long the policy will be effect for the insured.
- Read up on how <a href="/lyonsn1/git-wiki/">renewals work</a> to better understand.
- Leave these fields set to their default unless the test case calls them out.
+  RA creates story cards according to the SRD Business Rules.
+  RA get's approval from BAO for the story card. Look at the RA Board for story card status.
 </p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/policy-details.png" alt="">
 
-<h3 class="header-block">Discounts</h3>
 <p>
- Policies can have different terms.  A term is how long the policy will be effect for the insured.
- Read up on how <a href="/lyonsn1/git-wiki/">renewals work</a> to better understand.
- Leave these fields set to their default unless the test case calls them out.
+  Bring laptop and ask the RA or Dev where in the UI or database tables the test can be validated.
+  Write your notes in the RTC card, these will be helpful for the tester who picks up the card later.
 </p>
-
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/discounts.png" alt="">
-
-
-<section class="definition-list">
-  <header class="grid-row">
-    <h4 class="hide-show-all blue-button"> All</h4>
-  </header>
-  <dl>
-    <dt>Affinity</dt>
-    <dd>
-      A look up tool for organizations that NW provides discounts to.  Not required for testing.
-    </dd>
-
-    <dt>Easy Pay Sign-Up</dt>
-    <dd>
-      Keep default option.
-    </dd>
-
-    <dt>Property Product</dt>
-    <dd>
-      Do not need to make a selection for test policy creation.
-    </dd>
-
-    <dt>Paperless Policy</dt>
-    <dd>
-      Keep default option.
-    </dd>
-
-    <dt>Intra Agent Transfer</dt>
-    <dd>
-      Keep default option.
-    </dd>
-
-    <dt>SmartRide</dt>
-    <dd>
-      <b>Vehicle Program</b> will enable SmartRide.
-      <a href="https://www.nationwide.com/smartride.jsp">Read more about how SmartRide works.</a>
-    </dd>
-  </dl>
-</section>
-
-
-
-<h3 class="header-block">Financial Products</h3>
-<p>
-Do not need to make a selection for test policy creation.
-</p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/financial-products.png" alt="">
-
-
-
-<h3 class="header-block">Nationwide Documents/Email</h3>
-<p>
-  Add an email address.  This will be validated when doing an Issue Policy submission.
-  Save time and add it now!
-</p>
-<img class="img-left" src="/lyonsn1/git-wiki/assets/img/policy-center/auto/policy-info/nationwide-documents.png" alt="">
-
-
-
-<a href="/lyonsn1/git-wiki/policy-center/auto/drivers" class="button-link">
-  <button class="green-button" type="button" name="button">
-    Drivers
-  </button>
-</a>
 
 </section>
 
