@@ -16,6 +16,7 @@
 .main-content {
   margin: 3rem auto 0 auto;
   max-width: 67.777777%;
+  flex-shrink: 1;
 
   @media(max-width: 1100px) {
     max-width: 89%;

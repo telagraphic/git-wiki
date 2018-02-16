@@ -62,23 +62,16 @@ title: home
 
 <section class="grid-row">
   <section class="col-1-2">
-    <h3>Transactions</h3>
+    <h3>PLT Lines</h3>
     <ul>
+
+      {% for line in site.data.lines %}
       <li>
-        <a href="{{site.baseurl}}/" class="button">
-          Transaction 1
+        <a href="{{site.baseurl}}/{{line.link}}" class="button">
+          {{line.name}}
         </a>
       </li>
-      <li>
-        <a href="{{site.baseurl}}/" class="button">
-          Transaction 2
-        </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/" class="button">
-          Transaction 3
-        </a>
-      </li>
+      {% endfor %}
     </ul>
   </section>
   <section class="col-1-2">

@@ -20,17 +20,17 @@ var tipuesearch = {"pages": [{
     "url": "/lyonsn1/git-wiki/contacts-teams/"
   },{
     "title": "Defects",
-    "text": "Defects Defects info goes here.",
+    "text": "Defects",
     "tags": "",
     "url": "/lyonsn1/git-wiki/testing/defects/"
   },{
     "title": "Testing Overview",
-    "text": "Developer Overview What and How Important documents",
+    "text": "Developer Development resources, best practices, tips, whatever else can go here. Important Links Links go here Documents Docs go here",
     "tags": "",
     "url": "/lyonsn1/git-wiki/onboarding/developer-overview/"
   },{
     "title": "Development",
-    "text": "Developer Put information about development here!",
+    "text": "Developer Development resources, best practices, tips, whatever else can go here. Important Links Links go here Documents Docs go here",
     "tags": "",
     "url": "/lyonsn1/git-wiki/development/"
   },{
@@ -50,17 +50,37 @@ var tipuesearch = {"pages": [{
     "url": "/lyonsn1/git-wiki/icons/"
   },{
     "title": "home",
-    "text": "Welcome to Line/Project Line/Project information goes here. Onboarding Onboarding Starter Docs Project Overview Cardwall Projects Project 1 Project 2 Project 3 Transactions Transaction 1 Transaction 2 Transaction 3 Products Product 1 Product 2 Product 3",
+    "text": "Welcome to Line/Project Line/Project information goes here. Onboarding Onboarding Starter Docs Project Overview Cardwall Projects Project 1 Project 2 Project 3 PLT Lines Line-1 Line-2 Line-3 Products Product 1 Product 2 Product 3",
     "tags": "",
     "url": "/lyonsn1/git-wiki/"
   },{
+    "title": "Line 1",
+    "text": "Welcome to Line 1 Anything specific related to your line goes here! Onboarding Onboarding Tools & Access Starter Docs Cardwall Projects Products Transactions Glossary of Terms Contacts and Teams Requirements Development Testing Wiki Guide More Links to Things There are many transactions and products and ui-screens for this project. Here is a quick list of them. Transactions Onboarding Tools & Access Starter Docs Cardwall Products Products Transactions Glossary of Terms Contacts and Teams Screens Requirements Development Testing Wiki Guide A Long Title For Wrapping to the Next Line",
+    "tags": "",
+    "url": "/lyonsn1/git-wiki/lines/line-1/"
+  },{
+    "title": "Line 2",
+    "text": "Welcome to Line 2 Anything specific related to your line goes here! Onboarding Onboarding Tools & Access Starter Docs Cardwall Projects Products Transactions Glossary of Terms Contacts and Teams Requirements Development Testing Wiki Guide More Links to Things There are many transactions and products and ui-screens for this project. Here is a quick list of them. Transactions Onboarding Tools & Access Starter Docs Cardwall Products Products Transactions Glossary of Terms Contacts and Teams Screens Requirements Development Testing Wiki Guide A Long Title For Wrapping to the Next Line",
+    "tags": "",
+    "url": "/lyonsn1/git-wiki/lines/line-2/"
+  },{
+    "title": "Line 3",
+    "text": "Welcome to Line 3 Anything specific related to your line goes here! Onboarding Onboarding Tools & Access Starter Docs Cardwall Projects Products Transactions Glossary of Terms Contacts and Teams Requirements Development Testing Wiki Guide More Links to Things There are many transactions and products and ui-screens for this project. Here is a quick list of them. Transactions Onboarding Tools & Access Starter Docs Cardwall Products Products Transactions Glossary of Terms Contacts and Teams Screens Requirements Development Testing Wiki Guide A Long Title For Wrapping to the Next Line",
+    "tags": "",
+    "url": "/lyonsn1/git-wiki/lines/line-3/"
+  },{
+    "title": "Teams",
+    "text": "Teams/Lines Name Email Type Line-1 line-1@nationwide.com build Line-2 line-2@nationwide.com run Line-3 line-3@nationwide.com run",
+    "tags": "",
+    "url": "/lyonsn1/git-wiki/lines/"
+  },{
     "title": "onboarding",
-    "text": "Onboarding Here are some important links, checklists, and how-to's for getting started. Tools and Access Starter Docs Useful Links/Documents Project Overview Testing Overview Developer Overview Requirements Overview Cardwall Contacts & Teams",
+    "text": "Onboarding Here are some important links, checklists, and how-to's for getting started. Put software download links, instructions, spot links and anything else for onboarding. Getting Started Tools and Access Starter Docs Useful Links/Documents Project Overview Line Overview Testing Overview Developer Overview Requirements Overview Cardwall Contacts & Teams",
     "tags": "",
     "url": "/lyonsn1/git-wiki/onboarding/"
   },{
     "title": "Overview",
-    "text": "Line Testing Overview Testing Overview Info goes here.",
+    "text": "Testing Overview",
     "tags": "",
     "url": "/lyonsn1/git-wiki/testing/overview/"
   },{
@@ -80,12 +100,12 @@ var tipuesearch = {"pages": [{
     "url": "/lyonsn1/git-wiki/wiki-guide/project-page/"
   },{
     "title": "PLT Projects",
-    "text": "Comp Rater Copy this starter-page.html when creating a new page. Remove or alter components that fit your needs. Don't forget to update your links. Internet Copy this starter-page.html when creating a new page. Remove or alter components that fit your needs. Don't forget to update your links. Policy Center Copy this starter-page.html when creating a new page. Remove or alter components that fit your needs. Don't forget to update your links.",
+    "text": "Projects Remove or alter componentsthat fit your needs. Don't forget to update your links. Comp Rater Remove or alter componentsthat fit your needs. Don't forget to update your links. Internet Remove or alter componentsthat fit your needs. Don't forget to update your links. Policy Center Remove or alter componentsthat fit your needs. Don't forget to update your links.",
     "tags": "",
     "url": "/lyonsn1/git-wiki/projects/"
   },{
     "title": "Testing Overview",
-    "text": "Requirements Overview What and How Important documents",
+    "text": "Requirements Requirements resources, best practices, tips, whatever else can go here. Important Links Links go here Documents Docs go here",
     "tags": "",
     "url": "/lyonsn1/git-wiki/onboarding/requirements-overview/"
   },{
@@ -105,17 +125,17 @@ var tipuesearch = {"pages": [{
     "url": "/lyonsn1/git-wiki/wiki-guide/style-guide"
   },{
     "title": "Test Plans",
-    "text": "Test Plans Testing Overview Info goes here.",
+    "text": "Test Plans",
     "tags": "",
     "url": "/lyonsn1/git-wiki/testing/test-plans/"
   },{
     "title": "Testing Overview",
-    "text": "Testing Overview What and How Important documents",
+    "text": "Testing Testing resources, best practices, tips, whatever else can go here. Important Links Links go here Documents Docs go here",
     "tags": "",
     "url": "/lyonsn1/git-wiki/onboarding/testing-overview/"
   },{
     "title": "Testing",
-    "text": "Line Testing Testing Overview Test Plans Defects How To's",
+    "text": "Line Testing Put line testing information here for your team. Testing Overview Test Plans Defects How To's",
     "tags": "",
     "url": "/lyonsn1/git-wiki/testing/"
   },{

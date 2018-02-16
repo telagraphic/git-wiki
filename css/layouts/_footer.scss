@@ -1,0 +1,37 @@
+@import "../utils/base_colors";
+
+footer {
+  padding: 2rem 0 0 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  section {
+    background-color: $nw-blue;
+    height: 6rem;
+    width: 100%;
+    align-self: center;
+  }
+
+  img {
+    padding: 0;
+    float: left;
+  }
+
+  p {
+    float: left;
+    padding: 2rem;
+    color: white;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

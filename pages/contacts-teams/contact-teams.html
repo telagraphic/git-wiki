@@ -4,29 +4,28 @@ title: Contacts and Teams
 permalink: /contacts-teams/
 ---
 
-<section id="">
 
-    <h1>Contacts</h1>
+<h1>Contacts</h1>
 
-    <p>
-      Click on the Name to open up in Outlook.
-    </p>
+<p>
+  Click on the Name to open up in Outlook.
+</p>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <td>Name</td>
-          <td>Title</td>
-        </tr>
-      </thead>
-      <tbody>
-        {% for contact in site.data.contacts %}
-        <tr>
-          <td>
-            <a href="mailto:{{contact.email}}">{{contact.name}}</a>
-          </td>
-          <td>{{contact.title}}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+<table class="table">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Title</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for contact in site.data.contacts %}
+    <tr>
+      <td>
+        <a href="mailto:{{contact.email}}">{{contact.name}}</a>
+      </td>
+      <td>{{contact.title}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
