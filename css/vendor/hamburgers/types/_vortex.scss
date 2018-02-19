@@ -6,24 +6,24 @@
     .hamburger-inner {
       transition-duration: 0.2s;
       transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-      background-color: black;
+      background-color: #333;
 
       &::before,
       &::after {
         transition-duration: 0s;
         transition-delay: 0.1s;
         transition-timing-function: linear;
-        background-color: black;
+        background-color: #333;
       }
 
       &::before {
         transition-property: top, opacity;
-        background-color: black;
+        background-color: #333;
       }
 
       &::after {
         transition-property: bottom, transform;
-        background-color: black;
+        background-color: #333;
       }
     }
 
