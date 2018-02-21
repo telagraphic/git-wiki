@@ -1,5 +1,5 @@
-document.addEventListener('keydown', (event) => {
-  const keyName = event.key;
+window.addEventListener('keydown', function(event) {
+  var keyName = event.key;
 
   if (event.ctrlKey && keyName === "m") {
     hamburger.classList.toggle("is-active");
@@ -54,11 +54,9 @@ document.addEventListener('keydown', (event) => {
     event.preventDefault();
   }
 
-
-
 }, false);
 
-document.addEventListener('keyup', (event) => {
-  const keyName = event.key;
+window.addEventListener('keyup', function(event) {
+  var keyName = event.key;
   event.preventDefault();
 }, false);
