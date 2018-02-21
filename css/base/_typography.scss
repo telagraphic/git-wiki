@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3.38461954rem;
+  line-height: 3.4rem;
   line-height: calc( 2 * calc( 35px + (48 - 35) * ( (100vw - 600px) / ( 1300 - 600))));
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -23,6 +24,7 @@ h1 {
 
 h2 {
   font-size: 2.2692308rem;
+  line-height: 2.3rem;
   line-height: calc( 1.5 * calc( 35px + (48 - 35) * ( (100vw - 600px) / ( 1300 - 600))));
   padding-top: 2rem;
   padding-bottom: 1rem;
