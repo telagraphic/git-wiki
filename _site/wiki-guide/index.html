@@ -239,7 +239,7 @@
     </li>
     <li>
       <a href="/lyonsn1/git-wiki/wiki-guide/style-guide">
-        CSS Guide
+        CSS Layout Guide
       </a>
     </li>
   </ul>
@@ -266,6 +266,11 @@
         UI Screen
       </a>
     </li>
+    <li>
+      <a href="/lyonsn1/git-wiki/wiki-guide/stretch-page">
+        Stretch Page
+      </a>
+    </li>
   </ul>
 </section>
 
@@ -280,15 +285,35 @@
 <script src="/lyonsn1/git-wiki/assets/tipuesearch/tipuesearch_content.js"></script>
 <script src="/lyonsn1/git-wiki/assets/tipuesearch/tipuesearch_set.js"></script>
 <script src="/lyonsn1/git-wiki/assets/tipuesearch/tipuesearch.min.js"></script>
-<script src="/lyonsn1/git-wiki/js/scripts/jquery-scroll-lock.min.js"></script>
 <script src="/lyonsn1/git-wiki/js/scripts/prism-highlighter.js"></script>
-
-
+<script src="/lyonsn1/git-wiki/js/scripts/slider.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {
     $('#tipue_search_input').tipuesearch();
   });
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    keyboard: {
+      enabled: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
 </script>
 
 <script type="text/javascript" src="/lyonsn1/git-wiki/js/layouts/elements.js"></script>

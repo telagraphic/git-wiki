@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+  {% include head.html %}
+<body>
+
+  <section class="container">
+
+    <section class="grid-row" id="nav">
+      {% include nav.html %}
+    </section>
+
+    <section class="grid-row" id="menu">
+      {% include menu.html %}
+    </section>
+
+    <section class="grid-row search-results" id="search-section">
+      {% include search.html %}
+    </section>
+
+    <section class="grid-row" id="content-section">
+      {% include stretch.html %}
+    </section>
+  </section>
+</body>
+  {% include scripts.html %}
+</html>

@@ -1,0 +1,11 @@
+@import "../utils/base_colors";
+
+.stretch {
+  max-width: 100%;
+  margin: 3rem auto 0 auto;
+}
+
+.no-stretch {
+  max-width: 67.77%;
+  margin: 0 auto;
+}

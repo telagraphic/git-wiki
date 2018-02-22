@@ -12,6 +12,7 @@
 @import "vendor/hamburgers/hamburgers";
 @import "vendor/tipuesearch/tipuesearch";
 @import "vendor/prism/prism";
+@import "vendor/slider/slider";
 
 // layout - styles for specific components
 @import "layouts/grid";
@@ -23,6 +24,7 @@
 @import "layouts/project";
 @import "layouts/ui-screen";
 @import "layouts/article";
+@import "layouts/stretch";
 
 // components - buttons, inputs, links
 @import "components/buttons";
@@ -33,6 +35,7 @@
 @import "components/tabs";
 @import "components/text";
 @import "components/top_links";
+@import "components/slider";
 
 
 // icon boxes

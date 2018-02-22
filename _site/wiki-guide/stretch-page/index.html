@@ -9,7 +9,7 @@
   <meta name="author" content="Nick Lyons">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Line 1 Cardwall</title>
+  <title>Stretch Page</title>
   <link rel="shortcut icon" href="/lyonsn1/git-wiki/assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/lyonsn1/git-wiki/assets/img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
@@ -217,17 +217,75 @@
     </section>
 
     <section class="grid-row" id="content-section">
-      <main class="main-content">
-  <section id="">
-  <h1>Cardwall</h1>
+      <main class="stretch">
+  <section class="no-stretch">
+  <h1>Stretch Page Header</h1>
+  <p>
+    This slider page is great for screenshots and big pictures.
+  </p>
 </section>
 
-<section>
-  <h2>Soap UI</h2>
-</section>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+      <div class="swiper-slide">
+        <section class="no-stretch">
+          <h3>Error Card</h3>
+          <p>
+            Here is a slide with some words and a picture.
+          </p>
+        </section>
+        <img src="/lyonsn1/git-wiki/assets/img/cardwall/error-blue-card.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <section class="no-stretch">
+          <h3>Story Card</h3>
+          <p>
+            Here is a slide with some words and a picture.
+          </p>
+        </section>
+        <img src="/lyonsn1/git-wiki/assets/img/cardwall/story-green-card.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <section class="no-stretch">
+          <h3>Tech Card</h3>
+          <p>
+            Here is a slide with some words and a picture.
+          </p>
+        </section>
+        <img src="/lyonsn1/git-wiki/assets/img/cardwall/tech-yellow-card.jpg" alt="">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
-<section>
-  <h2>SQL Explorer</h2>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+<section class="no-stretch">
+  <h2>No Stretch</h1>
+  <p>
+    You'll need to wrap <b>h1, p, ul, ol</b> and anything else within a <b>section</b> tag with a class of <i>no-stretch</i>.
+  </p>
+
+  <pre>
+    <code class="language-markup">
+
+      &lt;section class=&quot;no-stretch&quot;&gt;
+        &lt;h2&gt;No Stretch&lt;/h1&gt;
+        &lt;p&gt;
+          You'll need to wrap &lt;b&gt;h1, p, ul, ol&lt;/b&gt;.
+        &lt;/p&gt;
+      &lt;/section&gt;
+
+    </code>
+  </pre>
 </section>
 
 </main>

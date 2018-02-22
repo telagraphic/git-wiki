@@ -2,15 +2,35 @@
 <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
 <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
 <script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
-<script src="{{ "/js/scripts/jquery-scroll-lock.min.js" | relative_url }}"></script>
 <script src="{{ "/js/scripts/prism-highlighter.js" | relative_url }}"></script>
-
-
+<script src="{{ "/js/scripts/slider.js" | relative_url }}"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {
     $('#tipue_search_input').tipuesearch();
   });
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    keyboard: {
+      enabled: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
 </script>
 
 <script type="text/javascript" src="{{site.baseurl}}/js/layouts/elements.js"></script>

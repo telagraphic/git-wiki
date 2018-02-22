@@ -3,8 +3,8 @@ var tab_container, tab_links, tabs;
 // code for multiple tabs
 if (document.querySelector('.tabs') !== null) {
   tab_container = document.querySelector('.tabs');
-  tab_links = tab_container.querySelectorAll('.tab-links li');
-  tabs = tab_container.querySelectorAll('.tab-content');
+  tab_links = Array.prototype.slice.call(tab_container.querySelectorAll('.tab-links li'));
+  tabs = Array.prototype.slice.call(tab_container.querySelectorAll('.tab-content'));
 
   tab_links.forEach(function(link, index) {
     link.addEventListener('click', function(event) {

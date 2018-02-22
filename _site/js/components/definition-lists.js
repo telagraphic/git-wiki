@@ -1,9 +1,8 @@
-var definition_lists = document.querySelectorAll('.definition-list');
+var definition_lists = Array.prototype.slice.call(document.querySelectorAll('.definition-list'));
 
 definition_lists.forEach(function(list) {
-  var def_terms = list.querySelectorAll('dl dt');
+  var def_terms = Array.prototype.slice.call(list.querySelectorAll('dl dt'));
   var button = list.querySelector('.hide-show-all');
-  console.log(def_terms);
 
   button.addEventListener('click', function(event) {
     def_terms.forEach(function(term) {
