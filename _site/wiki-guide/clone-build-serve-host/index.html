@@ -1,0 +1,424 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+
+  <title>Git Wiki</title>
+  <meta name="description" content="Jekyll Starter">
+  <meta name="author" content="Nick Lyons">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout Guide</title>
+  <link rel="shortcut icon" href="/lyonsn1/git-wiki/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/lyonsn1/git-wiki/assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="/lyonsn1/git-wiki/css/main.css" type="text/css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <section class="container">
+
+    <section class="grid-row" id="nav">
+      <nav id="nav">
+  <ul id="nav-icons">
+    <li id="search-button">
+      <a class="search-icon">
+        <span class="circle"></span>
+        <span class="handle"></span>
+      </a>
+    </li>
+    <li id="menu-button">
+      <button class="hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    </li>
+  </ul>
+  <form id="search-form" action="" method="">
+    <input id="tipue_search_input" type="text" pattern=".{3,}" title="At least 3 characters" required placeholder="search">
+    <button id="search-close-button" class="search-results-button">X</button>
+  </form>
+</nav>
+
+    </section>
+
+    <section class="grid-row" id="menu">
+      <section id="menu-columns">
+  <section class="col-1-4">
+    <ul>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Home</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/onboarding">
+        <li>Onboarding</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/lines">
+        <li>Lines</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/glossary">
+        <li>Glossary</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/projects">
+        <li>Projects</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/requirements">
+        <li>Requirements</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/development">
+        <li>Development</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/testing">
+        <li>Testing</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/wiki-guide">
+        <li>Wiki Guide</li>
+      </a>
+    </ul>
+  </section>
+
+  <section class="col-1-4">
+    <ul>
+      <a href="/lyonsn1/git-wiki/transactions/home/">
+        <li>Transactions</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Transaction 1</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Transaction 2</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Transaction 3</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Transaction 4</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Transaction 5</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Transaction 6</li>
+      </a>
+    </ul>
+  </section>
+
+  <section class="col-1-4">
+    <ul>
+      <a href="/lyonsn1/git-wiki/products/home/">
+        <li>Products</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Product 1</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Product 2</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Product 3</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Product 4</li>
+      </a>
+    </ul>
+  </section>
+
+  <section class="col-1-4">
+    <ul>
+      <a href="/lyonsn1/git-wiki/products/home/">
+        <li>Links</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 1</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 2</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 3</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 4</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 5</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 6</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 7</li>
+      </a>
+      <a href="/lyonsn1/git-wiki/">
+        <li>Link 8</li>
+      </a>
+    </ul>
+  </section>
+</section>
+
+    </section>
+
+    <section class="grid-row search-results" id="search-section">
+      <section id="tipue_search_content">
+</section>
+
+    </section>
+
+    <section class="grid-row" id="content-section">
+      <main class="main-content">
+  <h1>Clone, Build, Serve, Host</h1>
+
+<p>
+  This is the more complicated tough part.  You'll need know some git and ruby, make sure they are installed.
+  Installing, configuring the gems and project setup is always problematic.
+  You will run into issues more than likely.  Ask a test lead or automation developer for help if you get stuck.
+</p>
+
+<ul class="quick-links">
+  <li>
+    <a href="/lyonsn1/git-wiki/wiki-guide/clone-build-serve-host#clone">Clone</a>
+  </li>
+  <li>
+    <a href="/lyonsn1/git-wiki/wiki-guide/clone-build-serve-host#build-serve">Build/Serve</a>
+  </li>
+  <li>
+    <a href="/lyonsn1/git-wiki/wiki-guide/clone-build-serve-host#github">Github</a>
+  </li>
+  <li>
+    <a href="/lyonsn1/git-wiki/wiki-guide/clone-build-serve-host#index">Search Index</a>
+  </li>
+  <li>
+    <a href="/lyonsn1/git-wiki/wiki-guide/clone-build-serve-host#push">Push Process</a>
+  </li>
+</ul>
+
+<h2 id="clone">Clone the Repo</h2>
+<p>
+  Go to <a href="https://github.nwie.net/lyonsn1/git-wiki">https://github.nwie.net/lyonsn1/git-wiki</a>,
+  clone or download the repository.  This will copy the repo onto your local machine.
+</p>
+
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/git-repo.png" alt="">
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/git-clone.png" alt="">
+
+<p>
+Make sure bundler is installed, if not run:
+</p>
+
+<pre>
+  <code class="language-markup">
+    gem install bundler
+  </code>
+</pre>
+
+<p>
+Next, install gems.  The <b>Gemfile</b> tells us what gem's are needed for the project.
+</p>
+
+<pre>
+  <code class="language-markup">
+    bundle install
+  </code>
+</pre>
+
+<p>
+If <b>bundle install</b> didn't work, you may need to update, try this then run <b>bundle install</b> again.
+</p>
+
+<pre>
+  <code class="language-markup">
+    bundle update
+  </code>
+</pre>
+
+
+<p>
+Jekyll and all the other gems should be installed.  <b>gem list</b> will list all the gems installed.
+</p>
+
+<pre>
+  <code class="language-markup">
+    gem list
+  </code>
+</pre>
+
+<h2 id="build-serve">Build and Serve</h2>
+<p>
+  You'll need to run Jekyll from the command line.  <b>cd</b> into the project directory and type:
+</p>
+
+<pre>
+  <code class="language-markup">
+    bundle exec jekyll serve
+  </code>
+</pre>
+
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/jekyll-serve.png" alt="">
+<p>
+  This command builds and serves the site on your local host.  Copy the <b>server address</b> path
+  and paste into your browser.  Every time you save a change, you'll see a <b>regenerating</b> statement.
+</p>
+<p>
+  This allows you to run the wiki on your local machine and view the changes you make when editing
+  the pages.  Do this
+</p>
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/regenerating.png" alt="">
+
+<p>
+  When starting your project, you should update the title and baseurl in the _config.yml file.
+  Give it a name that describes what it is.
+</p>
+
+<pre>
+  <code class="language-markup">
+    title: PLT Wiki
+    baseurl: "/Nationwide/plt"
+  </code>
+</pre>
+
+<h2 id="github">Hosting on Github Pages</h2>
+<p>
+  In order to host the website on github pages.  You'll need to make your own repository for your project or team.
+</p>
+
+<p>
+  Sign-in to github with your nationwide credentials.
+</p>
+
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/new-repo.png" alt="">
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/creating-new-repo.png" alt="">
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/new-repo-setup.png" alt="">
+
+<p>
+  Looks complicated.  You will need to change the origin from the address above to your own.
+</p>
+
+<pre>
+  <code class="language-markup">
+    git remote -v
+  </code>
+</pre>
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/git-remote.png" alt="">
+
+<p>
+  Run this command to point your repository address.
+</p>
+<pre>
+  <code class="language-markup">
+    git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+  </code>
+</pre>
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/git-update-origin-remote.png" alt="">
+
+<p>
+   Now you can push your local repository to github!  Let's make some final changes to get it hosted.
+</p>
+<p>
+
+</p>
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/github-settings.png" alt="">
+
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/github-pages-setup.png" alt="">
+
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/github-pages-saved.png" alt="">
+
+<p>
+  You will need to update the <b>baseurl</b> in the <b>_config.yml</b> file to match your user-name/project-name
+  path.
+</p>
+
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/config-settings-baseurl.png" alt="">
+
+<p>
+  When you push your new changes, github will automatically build and update the website on github.
+</p>
+
+<h2 id="index">Index Pages</h2>
+
+<p>
+  For the search functionality to work, you should run <b>rake index</b> to index new pages or update pages.
+  This will add the new page and changes to the search index file.
+</p>
+<p>
+  Tipue search is a javascript library that builds a JSON index of the website.
+  It is located at <b>/assets/tipuesearch/tipuesearch_content.js</b>.  Don't mess with it!
+</p>
+<img src="/lyonsn1/git-wiki/assets/img/wiki-guide/clone-build-serve-host/rake-index.png" alt="">
+
+
+
+<h2 id="push">Push Process</h2>
+<p>
+  In short, the commit process goes like this:
+</p>
+<ol>
+  <li>
+    rake index
+  </li>
+  <li>
+    git add .
+  </li>
+  <li>
+    git commit -m "commit message"
+  </li>
+  <li>
+    git push origin master
+  </li>
+</ol>
+
+</main>
+
+    </section>
+  </section>
+</body>
+  <script src="/lyonsn1/git-wiki/js/scripts/jquery.min.js"></script>
+<script src="/lyonsn1/git-wiki/assets/tipuesearch/tipuesearch_content.js"></script>
+<script src="/lyonsn1/git-wiki/assets/tipuesearch/tipuesearch_set.js"></script>
+<script src="/lyonsn1/git-wiki/assets/tipuesearch/tipuesearch.min.js"></script>
+<script src="/lyonsn1/git-wiki/js/scripts/prism-highlighter.js"></script>
+<script src="/lyonsn1/git-wiki/js/scripts/slider.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#tipue_search_input').tipuesearch();
+  });
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    keyboard: {
+      enabled: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+</script>
+
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/layouts/elements.js"></script>
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/layouts/nav.js"></script>
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/layouts/menu.js"></script>
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/layouts/search.js"></script>
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/layouts/keyboard-shortcuts.js"></script>
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/components/definition-lists.js"></script>
+<script type="text/javascript" src="/lyonsn1/git-wiki/js/components/tabs.js"></script>
+
+</html>

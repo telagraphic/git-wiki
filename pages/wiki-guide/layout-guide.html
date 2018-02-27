@@ -1,0 +1,129 @@
+---
+layout: ui-screen
+title: Layout Guide
+permalink: /wiki-guide/layout-guide/
+---
+
+<h1>Layout Guide</h1>
+
+<p>
+  If you want to build your own page, you'll need to know just enough html and css.
+  All you really need to do is copy and paste from another page and edit the content!
+  You just have to keep an eye out for un-closed tags.
+  Every HTML element needs an opening and closing tag.
+</p>
+
+<h2>Creating a New Page</h2>
+<p>
+  The easiest way to create a new page is to copy and paste one of the templates from the page layout section.
+  Or any other page that you fits your need.
+</p>
+
+<p>
+  Next, you'll need to update the front matter.
+</p>
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/layout-guide/front-matter.png" alt="">
+
+<p>
+  The <b>layout</b> tells the page which template it will use.
+  the <b>title</b> gives the page a title that will appear in the browser tab.
+  the <b>permalink</b> is the page address. You'll always need a trailing slash at the end!
+</p>
+
+<pre>
+  <code class="language-markup">
+    ---
+    layout: project
+    title: Wiki Guide
+    permalink: /wiki-guide/
+    ---
+  </code>
+</pre>
+
+<p>
+  Now, you can start adding UI elements that fit your needs.
+  Just copy and paste them into your page from the <a href="{{site.baseurl}}/wiki-guide/style-guide">style guide</a>.
+</p>
+
+<h3>Images and Links</h3>
+
+<p>
+  Jekyll is a ruby gem, it has commands to build and a run a server, as well as some handy ruby variables
+  that you'll see in the markup.  For instance, you'll reference an image like this:
+</p>
+
+<pre>
+  <code class="language-markup">
+    {% raw %}
+    &lt;img src=&quot;{{site.baseurl}}/assets/img/image.png&quot;&gt;&lt;/img&gt;
+    {% endraw %}
+  </code>
+</pre>
+
+<p>
+  The <b>&#123;&#123;site.baseurl&#125;&#125;</b> is a variable that is replaced with
+  <b>/Nationwide/plt</b> when the site is built.
+  Instead of having to type this address everytime, the variable holds this value.
+  The rest of the path after that is the directory structure that goes to the <b>/img</b> folder.
+  Take a look around, there are many directories in the <b>/img</b> folder organized similarly to the <b>/pages</b>.
+  This makes it easier to find which images belong to which pages.
+</p>
+<p>
+  Links follow the same pattern.  But there is a slight difference.
+  Notice that after the <b>&#123;&#123;site.baseurl&#125;&#125;</b> the path is just <b>/wiki-guide/layout-guide</b>.
+  If you look at the project directory structure it is <b>/pages/wiki-guide/layout-guide</b>.
+  The <b>permalink</b> field in the front matter sets up this url scheme and will find the page with a matching path.
+  You can have pages nested within many folders, but the path can be one level deep.
+</p>
+
+<pre>
+  <code class="language-markup">
+    {% raw %}
+    &lt;a href=&quot;{{site.baseurl}}/wiki-guide/layout-guide/&quot;&gt;&lt;/a&gt;
+    {% endraw %}
+  </code>
+</pre>
+
+
+<h2>Wiki Structure</h2>
+
+<p>
+  Jekyll uses a project set-up like this:
+</p>
+
+<ul>
+  <li>
+    <b>_data</b>:  For long lists of information, create a <b>.csv</b> and loop thru them with a table.
+  </li>
+  <li>
+    <b>_includes</b>: the head, body, nav and other sections are isolated into their own components.
+    When building the site, jekyll builds them into a single page.
+  </li>
+  <li>
+    <b>_layouts</b>: each page inherits a template that has slightly different css rules and styles.
+  </li>
+  <li>
+    <b>_site</b>: the built version of the website.  This is what gets published on github pages.
+    It is the final version of the site.
+  </li>
+  <li>
+    <b>_config.yml</b>: set the project title and baseurl here.  Jekyll settings are configured here.
+  </li>
+  <li>
+    <b>assets</b>: img, files, icons and search code is here.
+  </li>
+  <li>
+    <b>css</b>: css styles are here, you don't need to edit these unless you want to change the look and feel.
+  </li>
+  <li>
+    <b>js</b>:  javascript code is here.  Just leave it alone.
+  </li>
+  <li>
+    <b>pages</b>:  where all the content and pages are stored, add new pages here!
+  </li>
+</ul>
+
+<p>
+  Check out how to <a href="{{site.baseurl}}/wiki-guide/clone-build-serve-host">build, serve and host</a>.
+</p>

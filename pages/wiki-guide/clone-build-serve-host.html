@@ -1,0 +1,205 @@
+---
+layout: page
+title: Layout Guide
+permalink: /wiki-guide/clone-build-serve-host/
+---
+
+<h1>Clone, Build, Serve, Host</h1>
+
+<p>
+  This is the more complicated tough part.  You'll need know some git and ruby, make sure they are installed.
+  Installing, configuring the gems and project setup is always problematic.
+  You will run into issues more than likely.  Ask a test lead or automation developer for help if you get stuck.
+</p>
+
+<ul class="quick-links">
+  <li>
+    <a href="{{site.baseurl}}/wiki-guide/clone-build-serve-host#clone">Clone</a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/wiki-guide/clone-build-serve-host#build-serve">Build/Serve</a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/wiki-guide/clone-build-serve-host#github">Github</a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/wiki-guide/clone-build-serve-host#index">Search Index</a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/wiki-guide/clone-build-serve-host#push">Push Process</a>
+  </li>
+</ul>
+
+<h2 id="clone">Clone the Repo</h2>
+<p>
+  Go to <a href="https://github.nwie.net/lyonsn1/git-wiki">https://github.nwie.net/lyonsn1/git-wiki</a>,
+  clone or download the repository.  This will copy the repo onto your local machine.
+</p>
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/git-repo.png" alt="">
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/git-clone.png" alt="">
+
+<p>
+Make sure bundler is installed, if not run:
+</p>
+
+<pre>
+  <code class="language-markup">
+    gem install bundler
+  </code>
+</pre>
+
+<p>
+Next, install gems.  The <b>Gemfile</b> tells us what gem's are needed for the project.
+</p>
+
+<pre>
+  <code class="language-markup">
+    bundle install
+  </code>
+</pre>
+
+<p>
+If <b>bundle install</b> didn't work, you may need to update, try this then run <b>bundle install</b> again.
+</p>
+
+<pre>
+  <code class="language-markup">
+    bundle update
+  </code>
+</pre>
+
+
+<p>
+Jekyll and all the other gems should be installed.  <b>gem list</b> will list all the gems installed.
+</p>
+
+<pre>
+  <code class="language-markup">
+    gem list
+  </code>
+</pre>
+
+<h2 id="build-serve">Build and Serve</h2>
+<p>
+  You'll need to run Jekyll from the command line.  <b>cd</b> into the project directory and type:
+</p>
+
+<pre>
+  <code class="language-markup">
+    bundle exec jekyll serve
+  </code>
+</pre>
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/jekyll-serve.png" alt="">
+<p>
+  This command builds and serves the site on your local host.  Copy the <b>server address</b> path
+  and paste into your browser.  Every time you save a change, you'll see a <b>regenerating</b> statement.
+</p>
+<p>
+  This allows you to run the wiki on your local machine and view the changes you make when editing
+  the pages.  Do this
+</p>
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/regenerating.png" alt="">
+
+<p>
+  When starting your project, you should update the title and baseurl in the _config.yml file.
+  Give it a name that describes what it is.
+</p>
+
+<pre>
+  <code class="language-markup">
+    title: PLT Wiki
+    baseurl: "/Nationwide/plt"
+  </code>
+</pre>
+
+<h2 id="github">Hosting on Github Pages</h2>
+<p>
+  In order to host the website on github pages.  You'll need to make your own repository for your project or team.
+</p>
+
+<p>
+  Sign-in to github with your nationwide credentials.
+</p>
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/new-repo.png" alt="">
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/creating-new-repo.png" alt="">
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/new-repo-setup.png" alt="">
+
+<p>
+  Looks complicated.  You will need to change the origin from the address above to your own.
+</p>
+
+<pre>
+  <code class="language-markup">
+    git remote -v
+  </code>
+</pre>
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/git-remote.png" alt="">
+
+<p>
+  Run this command to point your repository address.
+</p>
+<pre>
+  <code class="language-markup">
+    git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+  </code>
+</pre>
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/git-update-origin-remote.png" alt="">
+
+<p>
+   Now you can push your local repository to github!  Let's make some final changes to get it hosted.
+</p>
+<p>
+
+</p>
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/github-settings.png" alt="">
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/github-pages-setup.png" alt="">
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/github-pages-saved.png" alt="">
+
+<p>
+  You will need to update the <b>baseurl</b> in the <b>_config.yml</b> file to match your user-name/project-name
+  path.
+</p>
+
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/config-settings-baseurl.png" alt="">
+
+<p>
+  When you push your new changes, github will automatically build and update the website on github.
+</p>
+
+<h2 id="index">Index Pages</h2>
+
+<p>
+  For the search functionality to work, you should run <b>rake index</b> to index new pages or update pages.
+  This will add the new page and changes to the search index file.
+</p>
+<p>
+  Tipue search is a javascript library that builds a JSON index of the website.
+  It is located at <b>/assets/tipuesearch/tipuesearch_content.js</b>.  Don't mess with it!
+</p>
+<img src="{{site.baseurl}}/assets/img/wiki-guide/clone-build-serve-host/rake-index.png" alt="">
+
+
+
+<h2 id="push">Push Process</h2>
+<p>
+  In short, the commit process goes like this:
+</p>
+<ol>
+  <li>
+    rake index
+  </li>
+  <li>
+    git add .
+  </li>
+  <li>
+    git commit -m "commit message"
+  </li>
+  <li>
+    git push origin master
+  </li>
+</ol>
