@@ -1,6 +1,6 @@
 # Config settings
 title: Git Wiki
-baseurl: "/lyonsn1/git-wiki" #/lyonsn1/git-wiki
+baseurl: "" #/lyonsn1/git-wiki
 permalink: pretty
 
 tipue_search:
