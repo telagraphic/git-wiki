@@ -26,6 +26,7 @@ p {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
+  word-break: keep-all;
 }
 
 ul {
@@ -45,6 +46,20 @@ img {
   display: block;
   height: auto;
   margin: 0;
+  padding: 1.5rem 0 0 0;
+}
+
+img:before {
+  background-color: #e6e6e6;
+  content: "Image Not Found: (url: " attr(src) ")";
+  display: block;
+  margin-bottom: 10px;
+  color: #e00909;
+  font-size: .8rem;
+  padding: .5rem;
+}
+
+img + p {
   padding: 1.5rem 0 0 0;
 }
 
@@ -77,4 +92,5 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
+  margin: 0 !important;
 }

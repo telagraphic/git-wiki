@@ -215,7 +215,7 @@ var tipuesearch = {"pages": [{
     "url": "/lyonsn1/git-wiki/onboarding/useful-links/"
   },{
     "title": "Wiki Guide",
-    "text": "Wiki Guide This wiki uses Jekyll, a static web site generator that builds web pages from templates. It was created by one of the github founders. It works great with github pages. That's where this wiki is hosted. Read the docs for more information. Contact @Nick Lyons for assistance. How to Use Components to use in page layout and css instructions. Layout Guide UI Components Clone, Build, Serve, Host Page Layouts There are several page layouts to meet you needs for the type of documentation you might need. Project Article UI Screen Stretch Page",
+    "text": "Wiki Guide This wiki uses Jekyll, a static web site generator that builds web pages from templates. It was created by one of the github founders. It works great with github pages. That's where this wiki is hosted. Read the docs for more information. Contact @Nick Lyons for assistance. Shortcuts Ctrl + X: Toggle search bar. Ctrl + M: Toggle menu screen. How to Use Components to use in page layout and css instructions. Layout Guide UI Components Clone, Build, Serve, Host Page Layouts There are several page layouts to meet you needs for the type of documentation you might need. Project Article UI Screen Stretch Page",
     "tags": "",
     "url": "/lyonsn1/git-wiki/wiki-guide/"
   },{
